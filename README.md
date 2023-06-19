@@ -1,0 +1,1 @@
+# recolda-graphql-generator
