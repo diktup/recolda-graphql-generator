@@ -17,3 +17,9 @@ targets:
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/distribution-network.graphql
               output: lib/dart/distribution-network.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/charge-discharge.graphql
+              output: lib/dart/charge-discharge.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/mobile-warehouse.graphql
+              output: lib/dart/mobile-warehouse.graphql.dart
