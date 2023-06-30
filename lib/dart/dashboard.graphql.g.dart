@@ -6869,6 +6869,8 @@ GetProductsStatsWithFilter$Query$GetProductsStatsWithFilterResponseType$Category
         GetProductsStatsWithFilter$Query$GetProductsStatsWithFilterResponseType$CategoryWithSalesStatsType()
           ..id = json['id'] as String
           ..name = json['name'] as String?
+          ..salesValue = json['salesValue'] as String?
+          ..salesPercentage = json['salesPercentage'] as String?
           ..products = (json['products'] as List<dynamic>?)
               ?.map((e) =>
                   GetProductsStatsWithFilter$Query$GetProductsStatsWithFilterResponseType$CategoryWithSalesStatsType$InternalProductWithSalesStatsType
@@ -6890,6 +6892,8 @@ Map<String, dynamic>
   }
 
   writeNotNull('name', instance.name);
+  writeNotNull('salesValue', instance.salesValue);
+  writeNotNull('salesPercentage', instance.salesPercentage);
   writeNotNull('products', instance.products?.map((e) => e.toJson()).toList());
   return val;
 }

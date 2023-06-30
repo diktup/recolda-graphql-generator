@@ -1,4 +1,8 @@
-query getLastOrdersOfPos($pos: String!, $count: Float!, $target: OwnerOrTargetInput!) {
+query getLastOrdersOfPos(
+  $pos: String!
+  $count: Float!
+  $target: OwnerOrTargetInput!
+) {
   getLastOrdersOfPos(pos: $pos, count: $count, target: $target) {
     id
     orderNumber
@@ -1104,8 +1108,20 @@ query getLastOrdersOfPos($pos: String!, $count: Float!, $target: OwnerOrTargetIn
     updatedAt
   }
 }
-query getVisitsStats($POSes: [ID!], $commercials: [ID!], $from: DateTime!, $to: DateTime!, $target: TargetACIInput!) {
-  getVisitsStats(POSes: $POSes, commercials: $commercials, from: $from, to: $to, target: $target) {
+query getVisitsStats(
+  $POSes: [ID!]
+  $commercials: [ID!]
+  $from: DateTime!
+  $to: DateTime!
+  $target: TargetACIInput!
+) {
+  getVisitsStats(
+    POSes: $POSes
+    commercials: $commercials
+    from: $from
+    to: $to
+    target: $target
+  ) {
     total
     sales
     others
@@ -1113,15 +1129,39 @@ query getVisitsStats($POSes: [ID!], $commercials: [ID!], $from: DateTime!, $to: 
     othersPercentage
   }
 }
-query getOrdersCountByStatusWithFilter($POSes: [ID!], $commercials: [ID!], $from: DateTime!, $to: DateTime!, $target: TargetACIInput!) {
-  getOrdersCountByStatusWithFilter(POSes: $POSes, commercials: $commercials, from: $from, to: $to, target: $target) {
+query getOrdersCountByStatusWithFilter(
+  $POSes: [ID!]
+  $commercials: [ID!]
+  $from: DateTime!
+  $to: DateTime!
+  $target: TargetACIInput!
+) {
+  getOrdersCountByStatusWithFilter(
+    POSes: $POSes
+    commercials: $commercials
+    from: $from
+    to: $to
+    target: $target
+  ) {
     CANCELED
     SUCCESS
     PENDING
   }
 }
-query getOrdersRevenueStatsWithFilter($POSes: [ID!], $commercials: [ID!], $from: DateTime!, $to: DateTime!, $target: TargetACIInput!) {
-  getOrdersRevenueStatsWithFilter(POSes: $POSes, commercials: $commercials, from: $from, to: $to, target: $target) {
+query getOrdersRevenueStatsWithFilter(
+  $POSes: [ID!]
+  $commercials: [ID!]
+  $from: DateTime!
+  $to: DateTime!
+  $target: TargetACIInput!
+) {
+  getOrdersRevenueStatsWithFilter(
+    POSes: $POSes
+    commercials: $commercials
+    from: $from
+    to: $to
+    target: $target
+  ) {
     total
     current {
       total
@@ -1139,8 +1179,20 @@ query getOrdersRevenueStatsWithFilter($POSes: [ID!], $commercials: [ID!], $from:
     }
   }
 }
-query getOrdersStatsWithFilter($POSes: [ID!], $commercials: [ID!], $from: DateTime!, $to: DateTime!, $target: TargetACIInput!) {
-  getOrdersStatsWithFilter(POSes: $POSes, commercials: $commercials, from: $from, to: $to, target: $target) {
+query getOrdersStatsWithFilter(
+  $POSes: [ID!]
+  $commercials: [ID!]
+  $from: DateTime!
+  $to: DateTime!
+  $target: TargetACIInput!
+) {
+  getOrdersStatsWithFilter(
+    POSes: $POSes
+    commercials: $commercials
+    from: $from
+    to: $to
+    target: $target
+  ) {
     totalOrderPrices
     totalObjectives
     paidInstallments
@@ -1158,7 +1210,14 @@ query getCreditsStatsWithFilter(
   $target: TargetACIInput!
   $pagination: PaginationInput
 ) {
-  getCreditsStatsWithFilter(POSes: $POSes, commercials: $commercials, from: $from, to: $to, target: $target, pagination: $pagination) {
+  getCreditsStatsWithFilter(
+    POSes: $POSes
+    commercials: $commercials
+    from: $from
+    to: $to
+    target: $target
+    pagination: $pagination
+  ) {
     count
     isLast
     objects {
@@ -2591,6 +2650,8 @@ query getProductsStatsWithFilter(
     categories {
       id
       name
+      salesValue
+      salesPercentage
       products {
         id
         name
@@ -2600,7 +2661,11 @@ query getProductsStatsWithFilter(
     }
   }
 }
-query getLastBestSellerOfPos($pos: String!, $count: Float!, $target: OwnerOrTargetInput!) {
+query getLastBestSellerOfPos(
+  $pos: String!
+  $count: Float!
+  $target: OwnerOrTargetInput!
+) {
   getLastBestSellerOfPos(pos: $pos, count: $count, target: $target) {
     product {
       id

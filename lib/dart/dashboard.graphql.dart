@@ -6216,11 +6216,15 @@ class GetProductsStatsWithFilter$Query$GetProductsStatsWithFilterResponseType$Ca
 
   String? name;
 
+  String? salesValue;
+
+  String? salesPercentage;
+
   List<GetProductsStatsWithFilter$Query$GetProductsStatsWithFilterResponseType$CategoryWithSalesStatsType$InternalProductWithSalesStatsType>?
       products;
 
   @override
-  List<Object?> get props => [id, name, products];
+  List<Object?> get props => [id, name, salesValue, salesPercentage, products];
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsStatsWithFilter$Query$GetProductsStatsWithFilterResponseType$CategoryWithSalesStatsTypeToJson(
@@ -32463,6 +32467,20 @@ final GET_PRODUCTS_STATS_WITH_FILTER_QUERY_DOCUMENT =
               ),
               FieldNode(
                 name: NameNode(value: 'name'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'salesValue'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'salesPercentage'),
                 alias: null,
                 arguments: [],
                 directives: [],
