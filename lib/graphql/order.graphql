@@ -970,7 +970,7 @@ query getOrder($id: String!) {
       id
       title
       phone
-      website
+
       extraDeliveryFees
       insidePictures {
         baseUrl
@@ -2076,7 +2076,7 @@ query getOrderByNumber($orderNumber: Float!) {
       id
       title
       phone
-      website
+
       extraDeliveryFees
       insidePictures {
         baseUrl
@@ -2210,7 +2210,10 @@ query getOrderByNumber($orderNumber: Float!) {
     updatedAt
   }
 }
-query findOrdersByPOS($input: OrderPOSFilterInput!, $pagination: PaginationInput) {
+query findOrdersByPOS(
+  $input: OrderPOSFilterInput!
+  $pagination: PaginationInput
+) {
   findOrdersByPOS(input: $input, pagination: $pagination) {
     count
     isLast
@@ -3185,7 +3188,7 @@ query findOrdersByPOS($input: OrderPOSFilterInput!, $pagination: PaginationInput
         id
         title
         phone
-        website
+
         extraDeliveryFees
         insidePictures {
           baseUrl
@@ -3325,7 +3328,10 @@ query exportPOSOrdersWithFilter($input: OrderPOSFilterInput!) {
     doc
   }
 }
-query exportPOSOrdersWithFilterByMail($emails: [String!]!, $input: OrderPOSFilterInput!) {
+query exportPOSOrdersWithFilterByMail(
+  $emails: [String!]!
+  $input: OrderPOSFilterInput!
+) {
   exportPOSOrdersWithFilterByMail(emails: $emails, input: $input) {
     accepted
     rejected
@@ -3336,13 +3342,24 @@ query exportPOSOrdersWithFilterByMail($emails: [String!]!, $input: OrderPOSFilte
     envelopeTime
   }
 }
-query exportOrdersWithFilter($input: OrderFilterInput!, $target: OwnerOrTargetInput) {
+query exportOrdersWithFilter(
+  $input: OrderFilterInput!
+  $target: OwnerOrTargetInput
+) {
   exportOrdersWithFilter(input: $input, target: $target) {
     doc
   }
 }
-query exportOrdersWithFilterByMail($emails: [String!]!, $input: OrderFilterInput!, $target: OwnerOrTargetInput) {
-  exportOrdersWithFilterByMail(emails: $emails, input: $input, target: $target) {
+query exportOrdersWithFilterByMail(
+  $emails: [String!]!
+  $input: OrderFilterInput!
+  $target: OwnerOrTargetInput
+) {
+  exportOrdersWithFilterByMail(
+    emails: $emails
+    input: $input
+    target: $target
+  ) {
     accepted
     rejected
     response
@@ -3357,7 +3374,11 @@ query createPDFAdhocInvoice($orderId: String!, $app: App!) {
     content
   }
 }
-query sendPDFAdhocInvoiceBymail($emails: [String!]!, $orderId: String!, $app: App!) {
+query sendPDFAdhocInvoiceBymail(
+  $emails: [String!]!
+  $orderId: String!
+  $app: App!
+) {
   sendPDFAdhocInvoiceBymail(emails: $emails, orderId: $orderId, app: $app) {
     accepted
     rejected
@@ -3368,7 +3389,11 @@ query sendPDFAdhocInvoiceBymail($emails: [String!]!, $orderId: String!, $app: Ap
     envelopeTime
   }
 }
-query findOrdersByUser($target: OwnerOrTargetInput!, $input: OrderFilterNoUserInput!, $pagination: PaginationInput) {
+query findOrdersByUser(
+  $target: OwnerOrTargetInput!
+  $input: OrderFilterNoUserInput!
+  $pagination: PaginationInput
+) {
   findOrdersByUser(target: $target, input: $input, pagination: $pagination) {
     count
     isLast
@@ -4343,7 +4368,7 @@ query findOrdersByUser($target: OwnerOrTargetInput!, $input: OrderFilterNoUserIn
         id
         title
         phone
-        website
+
         extraDeliveryFees
         insidePictures {
           baseUrl
@@ -4478,8 +4503,16 @@ query findOrdersByUser($target: OwnerOrTargetInput!, $input: OrderFilterNoUserIn
     }
   }
 }
-query getOrdersByTargetWithFilter($input: OrderFilterInput!, $target: OwnerOrTargetInput!, $pagination: PaginationInput) {
-  getOrdersByTargetWithFilter(input: $input, target: $target, pagination: $pagination) {
+query getOrdersByTargetWithFilter(
+  $input: OrderFilterInput!
+  $target: OwnerOrTargetInput!
+  $pagination: PaginationInput
+) {
+  getOrdersByTargetWithFilter(
+    input: $input
+    target: $target
+    pagination: $pagination
+  ) {
     count
     isLast
     objects {
@@ -5453,7 +5486,7 @@ query getOrdersByTargetWithFilter($input: OrderFilterInput!, $target: OwnerOrTar
         id
         title
         phone
-        website
+
         extraDeliveryFees
         insidePictures {
           baseUrl
@@ -6561,7 +6594,7 @@ mutation createOrder($input: OrderAPIInput!) {
       id
       title
       phone
-      website
+
       extraDeliveryFees
       insidePictures {
         baseUrl
@@ -7667,7 +7700,7 @@ mutation createWithMobileWarehouse($input: OrderAPIInput!) {
       id
       title
       phone
-      website
+
       extraDeliveryFees
       insidePictures {
         baseUrl
@@ -7801,7 +7834,10 @@ mutation createWithMobileWarehouse($input: OrderAPIInput!) {
     updatedAt
   }
 }
-mutation updateOrderInstallments($id: String!, $installments: [InstallmentInput!]!) {
+mutation updateOrderInstallments(
+  $id: String!
+  $installments: [InstallmentInput!]!
+) {
   updateOrderInstallments(id: $id, installments: $installments) {
     id
     orderNumber
@@ -8773,7 +8809,7 @@ mutation updateOrderInstallments($id: String!, $installments: [InstallmentInput!
       id
       title
       phone
-      website
+
       extraDeliveryFees
       insidePictures {
         baseUrl
@@ -9879,7 +9915,7 @@ mutation updateOrderStatus($input: OrderStatusInput!) {
       id
       title
       phone
-      website
+
       extraDeliveryFees
       insidePictures {
         baseUrl
@@ -10985,7 +11021,7 @@ mutation cancelOrder($orderId: String!) {
       id
       title
       phone
-      website
+
       extraDeliveryFees
       insidePictures {
         baseUrl

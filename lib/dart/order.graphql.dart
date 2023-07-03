@@ -1905,8 +1905,6 @@ class GetOrder$Query$OrderType$OrderPOSType extends JsonSerializable
 
   late List<String> phone;
 
-  late String website;
-
   double? extraDeliveryFees;
 
   List<GetOrder$Query$OrderType$OrderPOSType$PictureType>? insidePictures;
@@ -1917,16 +1915,8 @@ class GetOrder$Query$OrderType$OrderPOSType extends JsonSerializable
   GetOrder$Query$OrderType$OrderPOSType$FullAddressType? address;
 
   @override
-  List<Object?> get props => [
-        id,
-        title,
-        phone,
-        website,
-        extraDeliveryFees,
-        insidePictures,
-        currency,
-        address
-      ];
+  List<Object?> get props =>
+      [id, title, phone, extraDeliveryFees, insidePictures, currency, address];
   @override
   Map<String, dynamic> toJson() =>
       _$GetOrder$Query$OrderType$OrderPOSTypeToJson(this);
@@ -4059,8 +4049,6 @@ class GetOrderByNumber$Query$OrderType$OrderPOSType extends JsonSerializable
 
   late List<String> phone;
 
-  late String website;
-
   double? extraDeliveryFees;
 
   List<GetOrderByNumber$Query$OrderType$OrderPOSType$PictureType>?
@@ -4072,16 +4060,8 @@ class GetOrderByNumber$Query$OrderType$OrderPOSType extends JsonSerializable
   GetOrderByNumber$Query$OrderType$OrderPOSType$FullAddressType? address;
 
   @override
-  List<Object?> get props => [
-        id,
-        title,
-        phone,
-        website,
-        extraDeliveryFees,
-        insidePictures,
-        currency,
-        address
-      ];
+  List<Object?> get props =>
+      [id, title, phone, extraDeliveryFees, insidePictures, currency, address];
   @override
   Map<String, dynamic> toJson() =>
       _$GetOrderByNumber$Query$OrderType$OrderPOSTypeToJson(this);
@@ -6254,8 +6234,6 @@ class FindOrdersByPOS$Query$OrderPaginateType$OrderType$OrderPOSType
 
   late List<String> phone;
 
-  late String website;
-
   double? extraDeliveryFees;
 
   List<FindOrdersByPOS$Query$OrderPaginateType$OrderType$OrderPOSType$PictureType>?
@@ -6268,16 +6246,8 @@ class FindOrdersByPOS$Query$OrderPaginateType$OrderType$OrderPOSType
       address;
 
   @override
-  List<Object?> get props => [
-        id,
-        title,
-        phone,
-        website,
-        extraDeliveryFees,
-        insidePictures,
-        currency,
-        address
-      ];
+  List<Object?> get props =>
+      [id, title, phone, extraDeliveryFees, insidePictures, currency, address];
   @override
   Map<String, dynamic> toJson() =>
       _$FindOrdersByPOS$Query$OrderPaginateType$OrderType$OrderPOSTypeToJson(
@@ -8872,8 +8842,6 @@ class FindOrdersByUser$Query$OrderPaginateType$OrderType$OrderPOSType
 
   late List<String> phone;
 
-  late String website;
-
   double? extraDeliveryFees;
 
   List<FindOrdersByUser$Query$OrderPaginateType$OrderType$OrderPOSType$PictureType>?
@@ -8886,16 +8854,8 @@ class FindOrdersByUser$Query$OrderPaginateType$OrderType$OrderPOSType
       address;
 
   @override
-  List<Object?> get props => [
-        id,
-        title,
-        phone,
-        website,
-        extraDeliveryFees,
-        insidePictures,
-        currency,
-        address
-      ];
+  List<Object?> get props =>
+      [id, title, phone, extraDeliveryFees, insidePictures, currency, address];
   @override
   Map<String, dynamic> toJson() =>
       _$FindOrdersByUser$Query$OrderPaginateType$OrderType$OrderPOSTypeToJson(
@@ -11136,8 +11096,6 @@ class GetOrdersByTargetWithFilter$Query$OrderPaginateType$OrderType$OrderPOSType
 
   late List<String> phone;
 
-  late String website;
-
   double? extraDeliveryFees;
 
   List<GetOrdersByTargetWithFilter$Query$OrderPaginateType$OrderType$OrderPOSType$PictureType>?
@@ -11150,16 +11108,8 @@ class GetOrdersByTargetWithFilter$Query$OrderPaginateType$OrderType$OrderPOSType
       address;
 
   @override
-  List<Object?> get props => [
-        id,
-        title,
-        phone,
-        website,
-        extraDeliveryFees,
-        insidePictures,
-        currency,
-        address
-      ];
+  List<Object?> get props =>
+      [id, title, phone, extraDeliveryFees, insidePictures, currency, address];
   @override
   Map<String, dynamic> toJson() =>
       _$GetOrdersByTargetWithFilter$Query$OrderPaginateType$OrderType$OrderPOSTypeToJson(
@@ -13334,8 +13284,6 @@ class CreateOrder$Mutation$OrderType$OrderPOSType extends JsonSerializable
 
   late List<String> phone;
 
-  late String website;
-
   double? extraDeliveryFees;
 
   List<CreateOrder$Mutation$OrderType$OrderPOSType$PictureType>? insidePictures;
@@ -13346,16 +13294,8 @@ class CreateOrder$Mutation$OrderType$OrderPOSType extends JsonSerializable
   CreateOrder$Mutation$OrderType$OrderPOSType$FullAddressType? address;
 
   @override
-  List<Object?> get props => [
-        id,
-        title,
-        phone,
-        website,
-        extraDeliveryFees,
-        insidePictures,
-        currency,
-        address
-      ];
+  List<Object?> get props =>
+      [id, title, phone, extraDeliveryFees, insidePictures, currency, address];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateOrder$Mutation$OrderType$OrderPOSTypeToJson(this);
@@ -15607,8 +15547,6 @@ class CreateWithMobileWarehouse$Mutation$OrderType$OrderPOSType
 
   late List<String> phone;
 
-  late String website;
-
   double? extraDeliveryFees;
 
   List<CreateWithMobileWarehouse$Mutation$OrderType$OrderPOSType$PictureType>?
@@ -15621,16 +15559,8 @@ class CreateWithMobileWarehouse$Mutation$OrderType$OrderPOSType
       address;
 
   @override
-  List<Object?> get props => [
-        id,
-        title,
-        phone,
-        website,
-        extraDeliveryFees,
-        insidePictures,
-        currency,
-        address
-      ];
+  List<Object?> get props =>
+      [id, title, phone, extraDeliveryFees, insidePictures, currency, address];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateWithMobileWarehouse$Mutation$OrderType$OrderPOSTypeToJson(this);
@@ -17808,8 +17738,6 @@ class UpdateOrderInstallments$Mutation$OrderType$OrderPOSType
 
   late List<String> phone;
 
-  late String website;
-
   double? extraDeliveryFees;
 
   List<UpdateOrderInstallments$Mutation$OrderType$OrderPOSType$PictureType>?
@@ -17822,16 +17750,8 @@ class UpdateOrderInstallments$Mutation$OrderType$OrderPOSType
       address;
 
   @override
-  List<Object?> get props => [
-        id,
-        title,
-        phone,
-        website,
-        extraDeliveryFees,
-        insidePictures,
-        currency,
-        address
-      ];
+  List<Object?> get props =>
+      [id, title, phone, extraDeliveryFees, insidePictures, currency, address];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateOrderInstallments$Mutation$OrderType$OrderPOSTypeToJson(this);
@@ -19998,8 +19918,6 @@ class UpdateOrderStatus$Mutation$OrderType$OrderPOSType extends JsonSerializable
 
   late List<String> phone;
 
-  late String website;
-
   double? extraDeliveryFees;
 
   List<UpdateOrderStatus$Mutation$OrderType$OrderPOSType$PictureType>?
@@ -20011,16 +19929,8 @@ class UpdateOrderStatus$Mutation$OrderType$OrderPOSType extends JsonSerializable
   UpdateOrderStatus$Mutation$OrderType$OrderPOSType$FullAddressType? address;
 
   @override
-  List<Object?> get props => [
-        id,
-        title,
-        phone,
-        website,
-        extraDeliveryFees,
-        insidePictures,
-        currency,
-        address
-      ];
+  List<Object?> get props =>
+      [id, title, phone, extraDeliveryFees, insidePictures, currency, address];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateOrderStatus$Mutation$OrderType$OrderPOSTypeToJson(this);
@@ -22172,8 +22082,6 @@ class CancelOrder$Mutation$OrderType$OrderPOSType extends JsonSerializable
 
   late List<String> phone;
 
-  late String website;
-
   double? extraDeliveryFees;
 
   List<CancelOrder$Mutation$OrderType$OrderPOSType$PictureType>? insidePictures;
@@ -22184,16 +22092,8 @@ class CancelOrder$Mutation$OrderType$OrderPOSType extends JsonSerializable
   CancelOrder$Mutation$OrderType$OrderPOSType$FullAddressType? address;
 
   @override
-  List<Object?> get props => [
-        id,
-        title,
-        phone,
-        website,
-        extraDeliveryFees,
-        insidePictures,
-        currency,
-        address
-      ];
+  List<Object?> get props =>
+      [id, title, phone, extraDeliveryFees, insidePictures, currency, address];
   @override
   Map<String, dynamic> toJson() =>
       _$CancelOrder$Mutation$OrderType$OrderPOSTypeToJson(this);
@@ -28677,13 +28577,6 @@ final GET_ORDER_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'phone'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'website'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -35519,13 +35412,6 @@ final GET_ORDER_BY_NUMBER_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'phone'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'website'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -42421,13 +42307,6 @@ final FIND_ORDERS_BY_P_O_S_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'phone'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'website'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -50108,13 +49987,6 @@ final FIND_ORDERS_BY_USER_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'website'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'extraDeliveryFees'),
                     alias: null,
                     arguments: [],
@@ -57033,13 +56905,6 @@ final GET_ORDERS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'website'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'extraDeliveryFees'),
                     alias: null,
                     arguments: [],
@@ -63873,13 +63738,6 @@ final CREATE_ORDER_MUTATION_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'phone'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'website'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -70721,13 +70579,6 @@ final CREATE_WITH_MOBILE_WAREHOUSE_MUTATION_DOCUMENT =
               ),
               FieldNode(
                 name: NameNode(value: 'phone'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'website'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -77596,13 +77447,6 @@ final UPDATE_ORDER_INSTALLMENTS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'website'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
                 name: NameNode(value: 'extraDeliveryFees'),
                 alias: null,
                 arguments: [],
@@ -84441,13 +84285,6 @@ final UPDATE_ORDER_STATUS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'website'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
                 name: NameNode(value: 'extraDeliveryFees'),
                 alias: null,
                 arguments: [],
@@ -91279,13 +91116,6 @@ final CANCEL_ORDER_MUTATION_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'phone'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'website'),
                 alias: null,
                 arguments: [],
                 directives: [],

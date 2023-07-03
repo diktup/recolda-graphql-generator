@@ -2190,7 +2190,6 @@ GetOrder$Query$OrderType$OrderPOSType
           ..title = json['title'] as String
           ..phone =
               (json['phone'] as List<dynamic>).map((e) => e as String).toList()
-          ..website = json['website'] as String
           ..extraDeliveryFees = (json['extraDeliveryFees'] as num?)?.toDouble()
           ..insidePictures = (json['insidePictures'] as List<dynamic>?)
               ?.map((e) =>
@@ -2210,7 +2209,6 @@ Map<String, dynamic> _$GetOrder$Query$OrderType$OrderPOSTypeToJson(
     'id': instance.id,
     'title': instance.title,
     'phone': instance.phone,
-    'website': instance.website,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -4562,7 +4560,6 @@ GetOrderByNumber$Query$OrderType$OrderPOSType
           ..title = json['title'] as String
           ..phone =
               (json['phone'] as List<dynamic>).map((e) => e as String).toList()
-          ..website = json['website'] as String
           ..extraDeliveryFees = (json['extraDeliveryFees'] as num?)?.toDouble()
           ..insidePictures = (json['insidePictures'] as List<dynamic>?)
               ?.map((e) =>
@@ -4582,7 +4579,6 @@ Map<String, dynamic> _$GetOrderByNumber$Query$OrderType$OrderPOSTypeToJson(
     'id': instance.id,
     'title': instance.title,
     'phone': instance.phone,
-    'website': instance.website,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -6931,7 +6927,6 @@ FindOrdersByPOS$Query$OrderPaginateType$OrderType$OrderPOSType
           ..title = json['title'] as String
           ..phone =
               (json['phone'] as List<dynamic>).map((e) => e as String).toList()
-          ..website = json['website'] as String
           ..extraDeliveryFees = (json['extraDeliveryFees'] as num?)?.toDouble()
           ..insidePictures = (json['insidePictures'] as List<dynamic>?)
               ?.map((e) =>
@@ -6953,7 +6948,6 @@ Map<String, dynamic>
     'id': instance.id,
     'title': instance.title,
     'phone': instance.phone,
-    'website': instance.website,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -9694,7 +9688,6 @@ FindOrdersByUser$Query$OrderPaginateType$OrderType$OrderPOSType
           ..title = json['title'] as String
           ..phone =
               (json['phone'] as List<dynamic>).map((e) => e as String).toList()
-          ..website = json['website'] as String
           ..extraDeliveryFees = (json['extraDeliveryFees'] as num?)?.toDouble()
           ..insidePictures = (json['insidePictures'] as List<dynamic>?)
               ?.map((e) =>
@@ -9716,7 +9709,6 @@ Map<String, dynamic>
     'id': instance.id,
     'title': instance.title,
     'phone': instance.phone,
-    'website': instance.website,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -12142,7 +12134,6 @@ GetOrdersByTargetWithFilter$Query$OrderPaginateType$OrderType$OrderPOSType
           ..title = json['title'] as String
           ..phone =
               (json['phone'] as List<dynamic>).map((e) => e as String).toList()
-          ..website = json['website'] as String
           ..extraDeliveryFees = (json['extraDeliveryFees'] as num?)?.toDouble()
           ..insidePictures = (json['insidePictures'] as List<dynamic>?)
               ?.map((e) =>
@@ -12164,7 +12155,6 @@ Map<String, dynamic>
     'id': instance.id,
     'title': instance.title,
     'phone': instance.phone,
-    'website': instance.website,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -14538,7 +14528,6 @@ CreateOrder$Mutation$OrderType$OrderPOSType
           ..title = json['title'] as String
           ..phone =
               (json['phone'] as List<dynamic>).map((e) => e as String).toList()
-          ..website = json['website'] as String
           ..extraDeliveryFees = (json['extraDeliveryFees'] as num?)?.toDouble()
           ..insidePictures = (json['insidePictures'] as List<dynamic>?)
               ?.map((e) =>
@@ -14558,7 +14547,6 @@ Map<String, dynamic> _$CreateOrder$Mutation$OrderType$OrderPOSTypeToJson(
     'id': instance.id,
     'title': instance.title,
     'phone': instance.phone,
-    'website': instance.website,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -16989,7 +16977,6 @@ CreateWithMobileWarehouse$Mutation$OrderType$OrderPOSType
           ..title = json['title'] as String
           ..phone =
               (json['phone'] as List<dynamic>).map((e) => e as String).toList()
-          ..website = json['website'] as String
           ..extraDeliveryFees = (json['extraDeliveryFees'] as num?)?.toDouble()
           ..insidePictures = (json['insidePictures'] as List<dynamic>?)
               ?.map((e) =>
@@ -17010,7 +16997,6 @@ Map<String, dynamic>
     'id': instance.id,
     'title': instance.title,
     'phone': instance.phone,
-    'website': instance.website,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -19365,7 +19351,6 @@ UpdateOrderInstallments$Mutation$OrderType$OrderPOSType
           ..title = json['title'] as String
           ..phone =
               (json['phone'] as List<dynamic>).map((e) => e as String).toList()
-          ..website = json['website'] as String
           ..extraDeliveryFees = (json['extraDeliveryFees'] as num?)?.toDouble()
           ..insidePictures = (json['insidePictures'] as List<dynamic>?)
               ?.map((e) =>
@@ -19386,7 +19371,6 @@ Map<String, dynamic>
     'id': instance.id,
     'title': instance.title,
     'phone': instance.phone,
-    'website': instance.website,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -21737,7 +21721,6 @@ UpdateOrderStatus$Mutation$OrderType$OrderPOSType
           ..title = json['title'] as String
           ..phone =
               (json['phone'] as List<dynamic>).map((e) => e as String).toList()
-          ..website = json['website'] as String
           ..extraDeliveryFees = (json['extraDeliveryFees'] as num?)?.toDouble()
           ..insidePictures = (json['insidePictures'] as List<dynamic>?)
               ?.map((e) =>
@@ -21757,7 +21740,6 @@ Map<String, dynamic> _$UpdateOrderStatus$Mutation$OrderType$OrderPOSTypeToJson(
     'id': instance.id,
     'title': instance.title,
     'phone': instance.phone,
-    'website': instance.website,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -24102,7 +24084,6 @@ CancelOrder$Mutation$OrderType$OrderPOSType
           ..title = json['title'] as String
           ..phone =
               (json['phone'] as List<dynamic>).map((e) => e as String).toList()
-          ..website = json['website'] as String
           ..extraDeliveryFees = (json['extraDeliveryFees'] as num?)?.toDouble()
           ..insidePictures = (json['insidePictures'] as List<dynamic>?)
               ?.map((e) =>
@@ -24122,7 +24103,6 @@ Map<String, dynamic> _$CancelOrder$Mutation$OrderType$OrderPOSTypeToJson(
     'id': instance.id,
     'title': instance.title,
     'phone': instance.phone,
-    'website': instance.website,
   };
 
   void writeNotNull(String key, dynamic value) {
