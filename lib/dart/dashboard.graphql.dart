@@ -1944,7 +1944,7 @@ class GetLastOrdersOfPos$Query$OrderType$OrderPOSType extends JsonSerializable
 
   late List<String> phone;
 
-  late String website;
+  String? website;
 
   double? extraDeliveryFees;
 

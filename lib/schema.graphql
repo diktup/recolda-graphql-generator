@@ -7573,7 +7573,7 @@ type OrderPOSType {
   title: String!
   email: [String!]!
   phone: [String!]!
-  website: String!
+  website: String
   outsidePictures: [PictureType!]
   insidePictures: [PictureType!]
   posCategory: [POSCategoryOrderType!]
@@ -8685,6 +8685,9 @@ type Query {
     target: OwnerOrTargetInput!
     pagination: PaginationInput = { page: 0, limit: 20 }
   ): MobileWarehouseWithInternalProductPaginateType!
+  getMobileWarehouseWithInternalProduct(
+    id: ID!
+  ): MobileWarehouseWithInternalProductType!
   getMobileWarehouseByExcel(
     path: String
     target: OwnerOrTargetInput!

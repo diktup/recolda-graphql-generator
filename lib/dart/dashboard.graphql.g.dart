@@ -2213,7 +2213,7 @@ GetLastOrdersOfPos$Query$OrderType$OrderPOSType
           ..title = json['title'] as String
           ..phone =
               (json['phone'] as List<dynamic>).map((e) => e as String).toList()
-          ..website = json['website'] as String
+          ..website = json['website'] as String?
           ..extraDeliveryFees = (json['extraDeliveryFees'] as num?)?.toDouble()
           ..insidePictures = (json['insidePictures'] as List<dynamic>?)
               ?.map((e) =>
@@ -2233,7 +2233,6 @@ Map<String, dynamic> _$GetLastOrdersOfPos$Query$OrderType$OrderPOSTypeToJson(
     'id': instance.id,
     'title': instance.title,
     'phone': instance.phone,
-    'website': instance.website,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -2242,6 +2241,7 @@ Map<String, dynamic> _$GetLastOrdersOfPos$Query$OrderType$OrderPOSTypeToJson(
     }
   }
 
+  writeNotNull('website', instance.website);
   writeNotNull('extraDeliveryFees', instance.extraDeliveryFees);
   writeNotNull('insidePictures',
       instance.insidePictures?.map((e) => e.toJson()).toList());
