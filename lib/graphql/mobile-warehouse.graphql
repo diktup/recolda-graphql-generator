@@ -27372,7 +27372,7 @@ mutation removeFromMobileWarehouseStock(
     updatedAt
   }
 }
-query getMobileWarehouseWithInternalProduct($id: String!) {
+query getMobileWarehouseWithInternalProduct($id: ID!) {
   getMobileWarehouseWithInternalProduct(id: $id) {
     id
     user {
