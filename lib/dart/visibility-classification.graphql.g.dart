@@ -1,0 +1,251 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'visibility-classification.graphql.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+VisibilityClassification$Query$VisibilityClassificationType$MediaType$PictureType
+    _$VisibilityClassification$Query$VisibilityClassificationType$MediaType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        VisibilityClassification$Query$VisibilityClassificationType$MediaType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?;
+
+Map<String, dynamic>
+    _$VisibilityClassification$Query$VisibilityClassificationType$MediaType$PictureTypeToJson(
+        VisibilityClassification$Query$VisibilityClassificationType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
+
+VisibilityClassification$Query$VisibilityClassificationType$MediaType
+    _$VisibilityClassification$Query$VisibilityClassificationType$MediaTypeFromJson(
+            Map<String, dynamic> json) =>
+        VisibilityClassification$Query$VisibilityClassificationType$MediaType()
+          ..videos = (json['videos'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..pictures = (json['pictures'] as List<dynamic>?)
+              ?.map((e) =>
+                  VisibilityClassification$Query$VisibilityClassificationType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..deg360 = (json['deg360'] as List<dynamic>?)
+              ?.map((e) =>
+                  VisibilityClassification$Query$VisibilityClassificationType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$VisibilityClassification$Query$VisibilityClassificationType$MediaTypeToJson(
+        VisibilityClassification$Query$VisibilityClassificationType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+VisibilityClassification$Query$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureType
+    _$VisibilityClassification$Query$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        VisibilityClassification$Query$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?;
+
+Map<String, dynamic>
+    _$VisibilityClassification$Query$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureTypeToJson(
+        VisibilityClassification$Query$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
+
+VisibilityClassification$Query$VisibilityClassificationType$VisibilitySectionType$MediaType
+    _$VisibilityClassification$Query$VisibilityClassificationType$VisibilitySectionType$MediaTypeFromJson(
+            Map<String, dynamic> json) =>
+        VisibilityClassification$Query$VisibilityClassificationType$VisibilitySectionType$MediaType()
+          ..videos = (json['videos'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..pictures = (json['pictures'] as List<dynamic>?)
+              ?.map((e) =>
+                  VisibilityClassification$Query$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..deg360 = (json['deg360'] as List<dynamic>?)
+              ?.map((e) =>
+                  VisibilityClassification$Query$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$VisibilityClassification$Query$VisibilityClassificationType$VisibilitySectionType$MediaTypeToJson(
+        VisibilityClassification$Query$VisibilityClassificationType$VisibilitySectionType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+VisibilityClassification$Query$VisibilityClassificationType$VisibilitySectionType
+    _$VisibilityClassification$Query$VisibilityClassificationType$VisibilitySectionTypeFromJson(
+            Map<String, dynamic> json) =>
+        VisibilityClassification$Query$VisibilityClassificationType$VisibilitySectionType()
+          ..id = json['id'] as String
+          ..title = json['title'] as String?
+          ..description = json['description'] as String?
+          ..icon = json['icon'] as String?
+          ..media = json['media'] == null
+              ? null
+              : VisibilityClassification$Query$VisibilityClassificationType$VisibilitySectionType$MediaType
+                  .fromJson(json['media'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$VisibilityClassification$Query$VisibilityClassificationType$VisibilitySectionTypeToJson(
+        VisibilityClassification$Query$VisibilityClassificationType$VisibilitySectionType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('title', instance.title);
+  writeNotNull('description', instance.description);
+  writeNotNull('icon', instance.icon);
+  writeNotNull('media', instance.media?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+VisibilityClassification$Query$VisibilityClassificationType
+    _$VisibilityClassification$Query$VisibilityClassificationTypeFromJson(
+            Map<String, dynamic> json) =>
+        VisibilityClassification$Query$VisibilityClassificationType()
+          ..id = json['id'] as String
+          ..title = json['title'] as String
+          ..description = json['description'] as String?
+          ..icon = json['icon'] as String?
+          ..media = json['media'] == null
+              ? null
+              : VisibilityClassification$Query$VisibilityClassificationType$MediaType
+                  .fromJson(json['media'] as Map<String, dynamic>)
+          ..sections = (json['sections'] as List<dynamic>?)
+              ?.map((e) =>
+                  VisibilityClassification$Query$VisibilityClassificationType$VisibilitySectionType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..flag = json['flag'] as bool?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$VisibilityClassification$Query$VisibilityClassificationTypeToJson(
+        VisibilityClassification$Query$VisibilityClassificationType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'title': instance.title,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('description', instance.description);
+  writeNotNull('icon', instance.icon);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('sections', instance.sections?.map((e) => e.toJson()).toList());
+  writeNotNull('flag', instance.flag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+VisibilityClassification$Query _$VisibilityClassification$QueryFromJson(
+        Map<String, dynamic> json) =>
+    VisibilityClassification$Query()
+      ..visibilityClassification =
+          VisibilityClassification$Query$VisibilityClassificationType.fromJson(
+              json['visibilityClassification'] as Map<String, dynamic>);
+
+Map<String, dynamic> _$VisibilityClassification$QueryToJson(
+        VisibilityClassification$Query instance) =>
+    <String, dynamic>{
+      'visibilityClassification': instance.visibilityClassification.toJson(),
+    };
+
+VisibilityClassificationArguments _$VisibilityClassificationArgumentsFromJson(
+        Map<String, dynamic> json) =>
+    VisibilityClassificationArguments(
+      id: json['id'] as String,
+    );
+
+Map<String, dynamic> _$VisibilityClassificationArgumentsToJson(
+        VisibilityClassificationArguments instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+    };

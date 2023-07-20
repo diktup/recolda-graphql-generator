@@ -1,0 +1,30 @@
+query visibilitySection($id: String!) {
+  visibilitySection(id: $id) {
+    id
+    title
+    description
+    icon
+    media {
+      videos
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    owner
+    createdAt
+    updatedAt
+  }
+}

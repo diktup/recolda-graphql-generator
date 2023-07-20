@@ -1,0 +1,144 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'visibility-section.graphql.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+VisibilitySection$Query$VisibilitySectionType$MediaType$PictureType
+    _$VisibilitySection$Query$VisibilitySectionType$MediaType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        VisibilitySection$Query$VisibilitySectionType$MediaType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?;
+
+Map<String, dynamic>
+    _$VisibilitySection$Query$VisibilitySectionType$MediaType$PictureTypeToJson(
+        VisibilitySection$Query$VisibilitySectionType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
+
+VisibilitySection$Query$VisibilitySectionType$MediaType
+    _$VisibilitySection$Query$VisibilitySectionType$MediaTypeFromJson(
+            Map<String, dynamic> json) =>
+        VisibilitySection$Query$VisibilitySectionType$MediaType()
+          ..videos = (json['videos'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..pictures = (json['pictures'] as List<dynamic>?)
+              ?.map((e) =>
+                  VisibilitySection$Query$VisibilitySectionType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..deg360 = (json['deg360'] as List<dynamic>?)
+              ?.map((e) =>
+                  VisibilitySection$Query$VisibilitySectionType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$VisibilitySection$Query$VisibilitySectionType$MediaTypeToJson(
+        VisibilitySection$Query$VisibilitySectionType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+VisibilitySection$Query$VisibilitySectionType
+    _$VisibilitySection$Query$VisibilitySectionTypeFromJson(
+            Map<String, dynamic> json) =>
+        VisibilitySection$Query$VisibilitySectionType()
+          ..id = json['id'] as String
+          ..title = json['title'] as String?
+          ..description = json['description'] as String?
+          ..icon = json['icon'] as String?
+          ..media = json['media'] == null
+              ? null
+              : VisibilitySection$Query$VisibilitySectionType$MediaType
+                  .fromJson(json['media'] as Map<String, dynamic>)
+          ..owner = $enumDecode(_$VisibilityOwnerEnumEnumMap, json['owner'],
+              unknownValue: VisibilityOwnerEnum.artemisUnknown)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic> _$VisibilitySection$Query$VisibilitySectionTypeToJson(
+    VisibilitySection$Query$VisibilitySectionType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('title', instance.title);
+  writeNotNull('description', instance.description);
+  writeNotNull('icon', instance.icon);
+  writeNotNull('media', instance.media?.toJson());
+  val['owner'] = _$VisibilityOwnerEnumEnumMap[instance.owner]!;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+const _$VisibilityOwnerEnumEnumMap = {
+  VisibilityOwnerEnum.main: 'MAIN',
+  VisibilityOwnerEnum.competition: 'COMPETITION',
+  VisibilityOwnerEnum.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
+
+VisibilitySection$Query _$VisibilitySection$QueryFromJson(
+        Map<String, dynamic> json) =>
+    VisibilitySection$Query()
+      ..visibilitySection =
+          VisibilitySection$Query$VisibilitySectionType.fromJson(
+              json['visibilitySection'] as Map<String, dynamic>);
+
+Map<String, dynamic> _$VisibilitySection$QueryToJson(
+        VisibilitySection$Query instance) =>
+    <String, dynamic>{
+      'visibilitySection': instance.visibilitySection.toJson(),
+    };
+
+VisibilitySectionArguments _$VisibilitySectionArgumentsFromJson(
+        Map<String, dynamic> json) =>
+    VisibilitySectionArguments(
+      id: json['id'] as String,
+    );
+
+Map<String, dynamic> _$VisibilitySectionArgumentsToJson(
+        VisibilitySectionArguments instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+    };

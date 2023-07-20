@@ -15,6 +15,7 @@ type PictureType {
   height: Int
   x: Int
   y: Int
+  alt: String
 }
 
 type NestedPicturesType {
@@ -631,6 +632,7 @@ type WholesalerType {
   email: String
   website: String
   phone: IPhoneType
+  contactEmails: [String!]
   fax: IPhoneType
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -762,6 +764,7 @@ type ManufacturerType {
   address: FullAddressType
   email: String
   website: String
+  contactEmails: [String!]
   createdAt: DateTime!
   updatedAt: DateTime!
   company: CompanyType
@@ -1366,6 +1369,7 @@ type ProjectType {
   status: ProjectStatusEnum
   color: String
   picture: PictureType
+  externalId: String
   members: [ProjectMemberType!]
   resources: [DocumentType!]
   attachments: [DocumentType!]
@@ -1429,6 +1433,88 @@ type StockPaginateType {
   count: Int
   isLast: Boolean
   objects: [StockType!]!
+}
+
+type MetaKeywordsType {
+  name: String
+  content: String
+}
+
+type CatalogueCategorySeoType {
+  urlKey: String
+  metaTitle: String
+  metaDesription: String
+  metaKeywords: [MetaKeywordsType!]
+}
+
+type CatalogueCategoryBaseType {
+  id: ID!
+  name: String
+  description: String
+  externalId: String
+  pictures: [PictureType!]
+  variety: ProductVarietyEnum
+  parent: CatalogueCategoryBaseType
+  portal: Boolean
+  pickup: Boolean
+  booking: Boolean
+  delivery: Boolean
+  hasChildren: Boolean!
+  rank: Int
+  layer: Int!
+  seo: CatalogueCategorySeoType
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+enum ProductVarietyEnum {
+  PRODUCT
+  EQUIPMENT
+  SERVICE
+  VEHICULE
+}
+
+type CatalogueCategoryType {
+  id: ID!
+  name: String
+  description: String
+  externalId: String
+  pictures: [PictureType!]
+  variety: ProductVarietyEnum
+  parent: CatalogueCategoryBaseType
+  portal: Boolean
+  pickup: Boolean
+  booking: Boolean
+  delivery: Boolean
+  hasChildren: Boolean!
+  rank: Int
+  layer: Int!
+  seo: CatalogueCategorySeoType
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  target: TargetType!
+}
+
+type CatalogueCategoryWithChildrenType {
+  id: ID!
+  name: String
+  description: String
+  externalId: String
+  pictures: [PictureType!]
+  variety: ProductVarietyEnum
+  parent: CatalogueCategoryBaseType
+  portal: Boolean
+  pickup: Boolean
+  booking: Boolean
+  delivery: Boolean
+  hasChildren: Boolean!
+  rank: Int
+  layer: Int!
+  seo: CatalogueCategorySeoType
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  target: TargetType!
+  children: [CatalogueCategoryWithChildrenType!]
 }
 
 type BrandType {
@@ -1510,13 +1596,6 @@ type AttributeBaseType {
   variety: ProductVarietyEnum
   createdAt: DateTime!
   updatedAt: DateTime!
-}
-
-enum ProductVarietyEnum {
-  PRODUCT
-  EQUIPMENT
-  SERVICE
-  VEHICULE
 }
 
 type AttributeWithValueFilterType {
@@ -1628,59 +1707,6 @@ enum ProductStructureEnum {
   SERVICE
 }
 
-type MetaKeywordsType {
-  name: String
-  content: String
-}
-
-type CatalogueCategorySeoType {
-  urlKey: String
-  metaTitle: String
-  metaDesription: String
-  metaKeywords: [MetaKeywordsType!]
-}
-
-type CatalogueCategoryType {
-  id: ID!
-  name: String
-  description: String
-  externalId: String
-  pictures: [PictureType!]
-  variety: ProductVarietyEnum
-  portal: Boolean
-  pickup: Boolean
-  booking: Boolean
-  delivery: Boolean
-  hasChildren: Boolean!
-  rank: Int
-  layer: Int!
-  seo: CatalogueCategorySeoType
-  createdAt: DateTime!
-  updatedAt: DateTime!
-  target: TargetType!
-}
-
-type CatalogueCategoryWithChildrenType {
-  id: ID!
-  name: String
-  description: String
-  externalId: String
-  pictures: [PictureType!]
-  variety: ProductVarietyEnum
-  portal: Boolean
-  pickup: Boolean
-  booking: Boolean
-  delivery: Boolean
-  hasChildren: Boolean!
-  rank: Int
-  layer: Int!
-  seo: CatalogueCategorySeoType
-  createdAt: DateTime!
-  updatedAt: DateTime!
-  target: TargetType!
-  children: [CatalogueCategoryWithChildrenType!]
-}
-
 type InternalProductAttributeInnerType {
   selectedValue: String
   price: String
@@ -1742,6 +1768,7 @@ type InternalProductType {
   catalogueCategory: [CatalogueCategoryType!]
   globalCategory: GlobalCategoryProductType
   tax: String
+  seo: CatalogueCategorySeoType
   brand: BrandType
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -1758,6 +1785,40 @@ enum ProductConditionEnum {
 enum ProductStatusEnum {
   ACTIVE
   ARCHIVED
+}
+
+type InternalProductWithStockType {
+  id: ID
+  name: String
+  description: String
+  descriptionList: [String!]
+  specs: [ProductSpecsType!]
+  externalId: String
+  tags: [String!]
+  sku: String
+  condition: ProductConditionEnum
+  status: ProductStatusEnum
+  picture: PictureType
+  pictures: [PictureType!]
+  media: MediaType
+  structure: ProductStructureEnum
+  rent: Boolean
+  variety: ProductVarietyEnum
+  price: String
+  priceBeforeReduction: String
+  discount: DiscountDtoType
+  product: ProductType
+  target: TargetType!
+  catalogueCategory: [CatalogueCategoryType!]
+  globalCategory: GlobalCategoryProductType
+  tax: String
+  seo: CatalogueCategorySeoType
+  brand: BrandType
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  class: [ProductClassEnum!]
+  barcodes: [BarcodeType!]
+  stock: StockRawType
 }
 
 type InternalProductWithFavoriteStatusType {
@@ -1785,6 +1846,7 @@ type InternalProductWithFavoriteStatusType {
   catalogueCategory: [CatalogueCategoryType!]
   globalCategory: GlobalCategoryProductType
   tax: String
+  seo: CatalogueCategorySeoType
   brand: BrandType
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -1818,6 +1880,7 @@ type InternalProductWithoutClassType {
   catalogueCategory: [CatalogueCategoryType!]
   globalCategory: GlobalCategoryProductType
   tax: String
+  seo: CatalogueCategorySeoType
   brand: BrandType
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -1858,6 +1921,7 @@ type InternalProductWithoutClassWithFavoriteStatusType {
   catalogueCategory: [CatalogueCategoryType!]
   globalCategory: GlobalCategoryProductType
   tax: String
+  seo: CatalogueCategorySeoType
   brand: BrandType
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -1897,11 +1961,12 @@ type InternalProductWithRatingsType {
   product: ProductType
   catalogueCategory: [CatalogueCategoryType!]
   tax: String
+  seo: CatalogueCategorySeoType
   brand: BrandType
   createdAt: DateTime!
   updatedAt: DateTime!
   class: [ProductClassEnum!]
-  barcodes: [BarcodeFilterType!]
+  barcodes: [BarcodeType!]
   target: TargetFilterType!
   ratings: String
 }
@@ -1929,11 +1994,12 @@ type InternalProductWithRatingsWithFavoriteStatusType {
   product: ProductType
   catalogueCategory: [CatalogueCategoryType!]
   tax: String
+  seo: CatalogueCategorySeoType
   brand: BrandType
   createdAt: DateTime!
   updatedAt: DateTime!
   class: [ProductClassEnum!]
-  barcodes: [BarcodeFilterType!]
+  barcodes: [BarcodeType!]
   target: TargetFilterType!
   ratings: String
   isFavorite: Boolean
@@ -1964,6 +2030,7 @@ type InternalProductWithQuantityType {
   catalogueCategory: [CatalogueCategoryType!]
   globalCategory: GlobalCategoryProductType
   tax: String
+  seo: CatalogueCategorySeoType
   brand: BrandType
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -2008,16 +2075,6 @@ type BarcodeBaseRawType {
   createdAt: DateTime!
   updatedAt: DateTime!
   productAttributesValues: InternalProductAttributesValuesBaseType
-}
-
-type BarcodeFilterType {
-  id: ID!
-  barcode: String!
-  name: String
-  media: MediaType
-  price: String
-  discount: DiscountDtoType
-  productAttributesValues: InternalProductAttributesValuesFilterType
 }
 
 type BarcodeType {
@@ -2189,7 +2246,7 @@ type RentalInvoicingType {
   id: ID!
   number: String!
   description: String
-  status: GenericInvoicingStatus
+  status: GenericInvoicingStatusEnum
   address: InvoicingAddressType
   totalTax: String
   totalPrice: InvoicingPriceType
@@ -2199,7 +2256,7 @@ type RentalInvoicingType {
   date: DateTime
 }
 
-enum GenericInvoicingStatus {
+enum GenericInvoicingStatusEnum {
   DRAFT
   OPEN
   ISSUED
@@ -3302,38 +3359,6 @@ type PriceFullType {
   gross: ReduciblePriceType
 }
 
-type OrderPOSProductType {
-  id: String!
-  name: String!
-  tax: String!
-  price: String!
-  brand: BrandType
-  picture: PictureType
-}
-
-type OrderShoppingCartAttributeType {
-  label: String!
-  externalId: String!
-  isRequired: Boolean!
-  isMultipleChoice: Boolean!
-}
-
-type OrderShoppingCartAttributesValuesType {
-  label: String!
-  externalId: String!
-  attribute: OrderShoppingCartAttributeType!
-}
-
-type OrderShoppingCartBarcodeType {
-  id: ID!
-  price: String!
-  barcode: String!
-  name: String!
-  discount: DiscountDtoType
-  media: MediaType
-  productAttributesValues: [OrderShoppingCartAttributesValuesType!]
-}
-
 type TaxValueType {
   unit: String
   total: String
@@ -3347,16 +3372,14 @@ type ProductPriceType {
 }
 
 type OrderShoppingCartProductType {
-  internalProductId: String!
   name: String
-  product: OrderPOSProductType!
   target: TargetType
   taxValue: TaxValueType!
   price: ProductPriceType!
   deliveryMan: UserType
   quantity: Int!
   pickupTime: DateTime
-  barcode: OrderShoppingCartBarcodeType!
+  barcode: BarcodeType!
   orderProductStatus: OrderStatus!
 }
 
@@ -3958,31 +3981,6 @@ type FollowType {
   target: TargetWithGroupType!
 }
 
-type MessageMediaType {
-  picture: [PictureType!]
-  video: [PictureType!]
-}
-
-type CustomMessageType {
-  id: String
-  type: String
-}
-
-type MessageType {
-  id: ID!
-  text: String
-  gif: String
-  sticker: String
-  custom: CustomMessageType
-  media: MessageMediaType
-  location: LonLatType
-  messageGroup: MessageGroupType!
-  sender: UserType!
-  seenBy: [UserType!]
-  createdAt: DateTime!
-  updatedAt: DateTime!
-}
-
 type MembersType {
   users: [UserType!]
 }
@@ -4006,7 +4004,7 @@ type MessageGroupWallpaperType {
 }
 
 type MessageGroupType {
-  id: ID
+  id: ID!
   name: String
   mute: Boolean
   creator: UserType
@@ -4014,10 +4012,12 @@ type MessageGroupType {
   wallpaper: MessageGroupWallpaperType
   sound: MessageSoundEnum
   status: MessageGroupStatusEnum
+  type: MessageGroupTypeEnum
   members: MembersType
   lastMessage: LastMessageType
   unreadCount: Int
   isDirectMessage: Boolean
+  target: TargetType
   createdAt: DateTime!
   updatedAt: DateTime!
 }
@@ -4031,6 +4031,36 @@ enum MessageSoundEnum {
 enum MessageGroupStatusEnum {
   ACTIVE
   ARCHIVED
+}
+
+enum MessageGroupTypeEnum {
+  SUPPORT
+  INTERNAL
+}
+
+type MessageMediaType {
+  picture: [PictureType!]
+  video: [PictureType!]
+}
+
+type CustomMessageType {
+  id: String
+  type: String
+}
+
+type MessageType {
+  id: ID!
+  text: String
+  gif: String
+  sticker: String
+  custom: CustomMessageType
+  media: MessageMediaType
+  location: LonLatType
+  messageGroup: MessageGroupType!
+  sender: UserType!
+  seenBy: [UserType!]
+  createdAt: DateTime!
+  updatedAt: DateTime!
 }
 
 type AccountType {
@@ -4340,6 +4370,7 @@ type ProductsByCatalogueCategoryCountType {
   externalId: String
   pictures: [PictureType!]
   variety: ProductVarietyEnum
+  parent: CatalogueCategoryBaseType
   portal: Boolean
   pickup: Boolean
   booking: Boolean
@@ -4389,6 +4420,7 @@ type InternalProductsByCatalogueCategoryCountType {
   externalId: String
   pictures: [PictureType!]
   variety: ProductVarietyEnum
+  parent: CatalogueCategoryBaseType
   portal: Boolean
   pickup: Boolean
   booking: Boolean
@@ -4455,6 +4487,7 @@ type InternalProductsByWholesalerCountType {
   email: String
   website: String
   phone: IPhoneType
+  contactEmails: [String!]
   fax: IPhoneType
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -4470,6 +4503,7 @@ type InternalProductsByManufacturerCountType {
   address: FullAddressType
   email: String
   website: String
+  contactEmails: [String!]
   createdAt: DateTime!
   updatedAt: DateTime!
   numberOfManufacturerProducts: Int!
@@ -4867,7 +4901,7 @@ type CorporateRatingAssignmentType {
 }
 
 type PromotionProductsType {
-  barcode: BarcodeBaseRawType!
+  barcode: BarcodeType!
   discount: DiscountDtoType!
 }
 
@@ -5154,6 +5188,9 @@ enum LandingPageTypeEnum {
   COPYRIGHT
   FAQ
   PROJECT
+  CAREER
+  PROJECTS
+  BLOG
 }
 
 type LandingPagesDataType {
@@ -5300,6 +5337,19 @@ type JobApplicationType {
   createdAt: DateTime!
   updatedAt: DateTime!
   jobDefinition: JobDefinitionType!
+}
+
+type OrderShoppingCartAttributeType {
+  label: String!
+  externalId: String!
+  isRequired: Boolean!
+  isMultipleChoice: Boolean!
+}
+
+type OrderShoppingCartAttributesValuesType {
+  label: String!
+  externalId: String!
+  attribute: OrderShoppingCartAttributeType!
 }
 
 type CouponType {
@@ -5490,7 +5540,7 @@ type SaleDeliveryNoteType {
   creator: UserType
   note: String
   description: String
-  status: GenericInvoicingStatus
+  status: GenericInvoicingStatusEnum
   details: [KeyValueType!]
   products: [InvoicingProductsBundleType!]
   address: InvoicingAddressType
@@ -5523,7 +5573,7 @@ type QuotationType {
   creator: UserType
   note: String
   description: String
-  status: GenericInvoicingStatus
+  status: GenericInvoicingStatusEnum
   details: [KeyValueType!]
   products: [InvoicingProductsBundleType!]
   address: InvoicingAddressType
@@ -5554,7 +5604,7 @@ type SaleInvoiceType {
   creator: UserType
   note: String
   description: String
-  status: GenericInvoicingStatus
+  status: GenericInvoicingStatusEnum
   details: [KeyValueType!]
   products: [InvoicingProductsBundleType!]
   address: InvoicingAddressType
@@ -5589,7 +5639,7 @@ type SaleOrderType {
   creator: UserType
   note: String
   description: String
-  status: GenericInvoicingStatus
+  status: GenericInvoicingStatusEnum
   details: [KeyValueType!]
   products: [InvoicingProductsBundleType!]
   address: InvoicingAddressType
@@ -5616,7 +5666,7 @@ type SaleIssueNoteType {
   creator: UserType
   note: String
   description: String
-  status: GenericInvoicingStatus
+  status: GenericInvoicingStatusEnum
   details: [KeyValueType!]
   products: [InvoicingProductsBundleType!]
   address: InvoicingAddressType
@@ -5650,7 +5700,7 @@ type PurchaseDeliveryNoteType {
   creator: UserType
   note: String
   description: String
-  status: GenericInvoicingStatus
+  status: GenericInvoicingStatusEnum
   details: [KeyValueType!]
   products: [InvoicingProductsBundleType!]
   address: InvoicingAddressType
@@ -5681,7 +5731,7 @@ type PurchaseInvoiceType {
   creator: UserType
   note: String
   description: String
-  status: GenericInvoicingStatus
+  status: GenericInvoicingStatusEnum
   details: [KeyValueType!]
   products: [InvoicingProductsBundleType!]
   address: InvoicingAddressType
@@ -5712,7 +5762,7 @@ type PurchaseOrderType {
   creator: UserType
   note: String
   description: String
-  status: GenericInvoicingStatus
+  status: GenericInvoicingStatusEnum
   details: [KeyValueType!]
   products: [InvoicingProductsBundleType!]
   address: InvoicingAddressType
@@ -6776,6 +6826,28 @@ type AppTweakTopChartLeaderboardType {
   power: Float
 }
 
+type ErpIntegrationEventType {
+  event: ErpElementsEnum!
+  active: Boolean!
+}
+
+enum ErpElementsEnum {
+  PRODUCTS
+  SERVICES
+  EQUIPMENTS
+  CUSTOMERS
+  CONTACTS
+  SUPPLIERS
+  QUOTATIONS
+  SALE_ORDERS
+  SALE_INVOICES
+  SALE_DELIVERY_NOTES
+  SALE_ISSUE_NOTES
+  PURCHASE_INVOICES
+  PURCHASE_DELIVERY_NOTES
+  PURCHASE_ORDERS
+}
+
 type QuestsCountType {
   total: Int!
   DRAFT: Int!
@@ -7632,6 +7704,7 @@ type CatalogueCategoryWithTotalAmountType {
   externalId: String
   pictures: [PictureType!]
   variety: ProductVarietyEnum
+  parent: CatalogueCategoryBaseType
   portal: Boolean
   pickup: Boolean
   booking: Boolean
@@ -8082,6 +8155,7 @@ type InternalProductWithoutProductOrBarcodesType {
   catalogueCategory: [CatalogueCategoryType!]
   globalCategory: GlobalCategoryProductType
   tax: String
+  seo: CatalogueCategorySeoType
   brand: BrandType
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -8815,6 +8889,28 @@ type Query {
     filter: BarcodeWithVarietyAndStructureFilterInput!
     target: TargetACIInput!
   ): BarcodePaginateType!
+  getSimpleProductWithFavoriteStatus(
+    # Internal product id
+    id: ID!
+  ): InternalProductWithFavoriteStatusType!
+  getSimpleProductWithFavoriteStatusByUrlKey(
+    # Internal product seo urlKey.
+    urlKey: String!
+    target: TargetACIInput!
+  ): InternalProductWithFavoriteStatusType!
+  getSimpleProductsByTargetAndCatalogueCategoryUrlKeyWithFavoriteStatus(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+    target: TargetACIInput!
+    urlKey: String!
+  ): InternalProductWithFavoriteStatusPaginateType!
+  getSimpleProductsByCatalogueCategoryWithFavoriteStatus(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+    catalogueCategoryIds: [ID!]!
+  ): InternalProductWithFavoriteStatusPaginateType!
+  getSimpleBarcodeByBarcodeAndTarget(
+    target: TargetACIInput!
+    barcode: String!
+  ): BarcodeType!
   getSimpleProductWithFilter(
     searchString: String
     pagination: PaginationInput = { page: 0, limit: 20 }
@@ -8840,6 +8936,19 @@ type Query {
     sort: [ProductSortInput!]
     target: TargetACIInput!
   ): BarcodesPaginatedWithFilterType!
+  getSimpleProductsWithRatingsWithFavoriteStatusWithFilter(
+    searchString: String
+    pagination: PaginationInput = { page: 0, limit: 20 }
+    filter: InternalProductFilterInput
+    sort: [ProductSortInput!]
+  ): InternalProductWithRatingsPaginateWithFavoriteStatusWithFilterType!
+  getSimpleBarcodesByBarcodesAndTarget(
+    target: TargetACIInput!
+    barcodes: [String!]!
+  ): [BarcodeType!]!
+  getSimpleProductsByTargetGroupedByClassWithFavoriteStatus(
+    target: TargetACIInput!
+  ): InternalProductByClassTypeWithFavoriteStatus!
   getInternalProducts(
     pagination: PaginationInput = { page: 0, limit: 20 }
     target: TargetACIInput
@@ -8901,6 +9010,7 @@ type Query {
     productId: ID!
   ): InternalProductPaginateType!
   getInternalProduct(id: ID!): InternalProductType!
+  getInternalProductWithStock(id: ID!): InternalProductWithStockType!
   getInternalProductWithFavoriteStatus(
     id: ID!
   ): InternalProductWithFavoriteStatusType!
@@ -9003,6 +9113,8 @@ type Query {
     path: String
     base64: String
   ): CatalogueImportValidationType!
+  getPosTemplateByExcel(path: String): InvoicePDFType!
+  sendPosTemplateBymail(emails: [String!], subject: String!): MailResponseDto!
   getCatalogueTemplateByExcel(path: String): InvoicePDFType!
   sendCatalogueTemplateBymail(
     emails: [String!]
@@ -9724,6 +9836,7 @@ type Query {
     pagination: PaginationInput = { page: 0, limit: 20 }
   ): PaginatedPosAttributesType!
   posAttributes(id: String!): PosAttributesType!
+  posAttributesByPos(pos: ID!): PosAttributesType!
   getVisibilityClassifications: [VisibilityClassificationType!]!
   getVisibilityClassificationsPaginated(
     pagination: PaginationInput = { page: 0, limit: 20 }
@@ -10068,6 +10181,7 @@ input PictureInput {
   height: Int
   x: Int
   y: Int
+  alt: String
   baseUrl: String!
   path: String!
 }
@@ -10139,7 +10253,7 @@ input InvoicingInput {
   note: String
   details: [KeyValueInput!]
   products: [InvoicingProductsBundleInput!]!
-  status: GenericInvoicingStatus
+  status: GenericInvoicingStatusEnum
   address: InvoicingAddressInput
   taxes: [taxRankInput!]
   installments: [InstallmentInput!]
@@ -10194,8 +10308,8 @@ input RentalRefInput {
   location: String
   description: String
   status: RentalStatusEnum
-  start: DateTime!
-  end: DateTime!
+  start: DateTime
+  end: DateTime
   note: RentalNoteInput
 }
 
@@ -10555,6 +10669,13 @@ type Mutation {
     id: ID!
   ): CompanyContactType!
   deleteCompanyContact(id: ID!): DeleteResponseDtoType!
+  importPosByExcel(
+    # base64 string from excel file.
+    base64: String
+
+    # path to excel file in server.
+    path: String
+  ): SuccessResponseDtoType!
   importFullCorporateCatalogueByExcel(
     target: TargetACIInput!
 
@@ -11343,6 +11464,7 @@ input WholesalerCreateInput {
   email: String
   company: String
   website: String
+  contactEmails: [String!]
   phone: IPhoneInput
   fax: IPhoneInput
 }
@@ -11355,6 +11477,7 @@ input WholesalerUpdateInput {
   email: String
   company: String
   website: String
+  contactEmails: [String!]
   phone: IPhoneInput
   fax: IPhoneInput
   id: String!
@@ -11432,6 +11555,7 @@ input ManufacturerCreateInput {
   address: FullAddressInput
   email: String
   company: String
+  contactEmails: [String!]
   website: String
 }
 
@@ -11442,6 +11566,7 @@ input ManufacturerUpdateInput {
   address: FullAddressInput
   email: String
   company: String
+  contactEmails: [String!]
   website: String
   id: String!
 }
@@ -11616,6 +11741,7 @@ input CreateSimpleProductInput {
   rent: Boolean
   discount: DiscountDtoInput
   sku: String
+  seo: CatalogueCategorySeoInput
   brand: String
   picture: PictureInput
   pictures: [PictureInput!]
@@ -11649,6 +11775,7 @@ input UpdateSimpleProductInput {
   rent: Boolean
   discount: DiscountDtoInput
   sku: String
+  seo: CatalogueCategorySeoInput
   brand: String
   picture: PictureInput
   pictures: [PictureInput!]
@@ -11677,6 +11804,7 @@ input CreateInternalProductInput {
   rent: Boolean
   discount: DiscountDtoInput
   sku: String
+  seo: CatalogueCategorySeoInput
   brand: String
   picture: PictureInput
   pictures: [PictureInput!]
@@ -11720,6 +11848,7 @@ input CreateCustomInternalProductInput {
   rent: Boolean
   discount: DiscountDtoInput
   sku: String
+  seo: CatalogueCategorySeoInput
   brand: String
   picture: PictureInput
   pictures: [PictureInput!]
@@ -11754,6 +11883,7 @@ input UpdateInternalProductInput {
   rent: Boolean
   discount: DiscountDtoInput
   sku: String
+  seo: CatalogueCategorySeoInput
   brand: String
   picture: PictureInput
   pictures: [PictureInput!]
@@ -12089,6 +12219,7 @@ input UpdatePictureInput {
   height: Int
   x: Int
   y: Int
+  alt: String
   baseUrl: String
   path: String
 }

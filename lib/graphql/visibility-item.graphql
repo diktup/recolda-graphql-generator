@@ -1,0 +1,85 @@
+query visibilityItem($id: String!) {
+  visibilityItem(id: $id) {
+    id
+    title
+    description
+    icon
+    media {
+      videos
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    classification {
+      id
+      title
+      description
+      icon
+      media {
+        videos
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      sections {
+        id
+        title
+        description
+        icon
+        media {
+          videos
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        createdAt
+        updatedAt
+      }
+
+      flag
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}

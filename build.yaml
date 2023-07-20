@@ -35,3 +35,18 @@ targets:
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/team-settings.graphql
               output: lib/dart/team-settings.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/pos-visibility.graphql
+              output: lib/dart/pos-visibility.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/visibility-classification.graphql
+              output: lib/dart/visibility-classification.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/visibility-item.graphql
+              output: lib/dart/visibility-item.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/visibility-section.graphql
+              output: lib/dart/visibility-section.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/merch-data.graphql
+              output: lib/dart/merch-data.graphql.dart

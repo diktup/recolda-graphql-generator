@@ -1,0 +1,58 @@
+query visibilityClassification($id: String!) {
+  visibilityClassification(id: $id) {
+    id
+    title
+    description
+    icon
+    media {
+      videos
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    sections {
+      id
+      title
+      description
+      icon
+      media {
+        videos
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+
+    flag
+    createdAt
+    updatedAt
+  }
+}

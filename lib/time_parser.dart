@@ -1,7 +1,7 @@
 import 'package:intl/intl.dart';
 
-final dateFormatter = DateFormat('yyyy-MM-dd');
-final timeFormatter = DateFormat('HH:mm:ss');
+final DateFormat dateFormatter = DateFormat('yyyy-MM-dd');
+final DateFormat timeFormatter = DateFormat('HH:mm:ss');
 
 DateTime fromGraphQLTimeToDartDateTime(String time) => DateTime.parse('1970-01-01T${time}Z');
 
