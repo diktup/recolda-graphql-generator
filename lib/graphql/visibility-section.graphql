@@ -1,5 +1,78 @@
-query visibilitySection($id: String!) {
-  visibilitySection(id: $id) {
+query getVisibilitySectionsbyTargetPaginated(
+  $owner: VisibilityOwnerEnum!
+  $pagination: PaginationInput
+  $target: TargetACIInput!
+) {
+  getVisibilitySectionsbyTargetPaginated(
+    pagination: $pagination
+    target: $target
+    owner: $owner
+  ) {
+    count
+    isLast
+    objects {
+      id
+      title
+      description
+      icon
+      media {
+        videos
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      owner
+      createdAt
+      updatedAt
+    }
+  }
+}
+
+mutation createVisibilitySection($input: VisibilitySectionInput!) {
+  createVisibilitySection(input: $input) {
+    id
+    title
+    description
+    icon
+    media {
+      videos
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    owner
+    createdAt
+    updatedAt
+  }
+}
+mutation updateVisibilitySection($id: ID!, $input: VisibilitySectionInput!) {
+  updateVisibilitySection(id: $id, input: $input) {
     id
     title
     description

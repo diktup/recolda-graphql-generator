@@ -1,5 +1,1584 @@
-query posVisibility($id: String!) {
-  posVisibility(id: $id) {
+query getPosVisibilityByPosAndTarget(
+  $pagination: PaginationInput
+  $target: TargetACIInput!
+  $pos: ID!
+) {
+  getPosVisibilityByPosAndTarget(
+    pagination: $pagination
+    target: $target
+    pos: $pos
+  ) {
+    count
+    isLast
+    objects {
+      id
+      section {
+        id
+        title
+        description
+        icon
+        media {
+          videos
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        owner
+        createdAt
+        updatedAt
+      }
+      pos {
+        id
+        tags
+        name
+        title
+        email
+        phone
+        website
+        subtitle
+        currency
+        turnover
+        reference
+        published
+        createdAt
+        updatedAt
+        brandColor
+        isFollowed
+        description
+        contactEmails
+        averageCustomers
+        languages {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        outsidePictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        insidePictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        openingHours {
+          status
+          hours {
+            day
+            from
+            to
+          }
+        }
+        specialOffers {
+          offerType
+          hours {
+            day
+            from
+            to
+          }
+        }
+        locations {
+          city
+          address
+          postCode
+          addressLine
+          location {
+            type
+            coordinates
+          }
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          state {
+            id
+            name
+            code
+            created
+            surface
+            dialCode
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          owner {
+            name
+            phone {
+              number
+              countryCode
+            }
+          }
+        }
+        chatContact {
+          name {
+            id
+            name
+            code
+            fontIcon
+            createdAt
+            updatedAt
+            images {
+              style
+              images {
+                svg {
+                  size48 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size96 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size144 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size240 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size480 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                }
+                png {
+                  size48 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size96 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size144 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size240 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size480 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                }
+              }
+            }
+          }
+          value
+        }
+        socialMedia {
+          name {
+            id
+            name
+            code
+            fontIcon
+            createdAt
+            updatedAt
+            images {
+              style
+              images {
+                svg {
+                  size48 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size96 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size144 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size240 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size480 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                }
+                png {
+                  size48 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size96 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size144 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size240 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size480 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                }
+              }
+            }
+          }
+          value
+        }
+        company {
+          id
+          name
+          description
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          address {
+            city
+            address
+            postCode
+            addressLine
+            location {
+              type
+              coordinates
+            }
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            state {
+              id
+              name
+              code
+              created
+              surface
+              dialCode
+              country {
+                id
+                name
+                code
+                dialCode
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            owner {
+              name
+              phone {
+                number
+                countryCode
+              }
+            }
+          }
+          legal {
+            vat
+            register
+            licence
+          }
+          banks {
+            id
+            holder {
+              name
+              type
+              address {
+                city
+                address
+                postCode
+                addressLine
+                location {
+                  type
+                  coordinates
+                }
+                country {
+                  id
+                  name
+                  code
+                  dialCode
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                }
+                state {
+                  id
+                  name
+                  code
+                  created
+                  surface
+                  dialCode
+                  country {
+                    id
+                    name
+                    code
+                    dialCode
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                    }
+                  }
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                }
+                owner {
+                  name
+                  phone {
+                    number
+                    countryCode
+                  }
+                }
+              }
+            }
+            account
+            iban
+            bank {
+              id
+              name
+              code
+              bic
+              logo {
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                png {
+                  default {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size16 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size24 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size32 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size48 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size64 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size128 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size256 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  size512 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                }
+                icon
+              }
+              createdAt
+              updatedAt
+            }
+            externalId
+            createdAt
+            updatedAt
+          }
+          contact {
+            website
+            email
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
+          }
+          logistic
+          tags
+          externalId
+          createdAt
+          updatedAt
+        }
+        posCategory {
+          id
+          name
+          mapPicture
+          createdAt
+          updatedAt
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        services {
+          id
+          index
+          name
+          createdAt
+          updatedAt
+        }
+        paymentMethods {
+          id
+          name
+          code
+          paymentType
+          materialIcon
+          createdAt
+          updatedAt
+          images {
+            png {
+              alt {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              alt2x {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              alt_128 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              alt_256 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              alt_512 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              card_flat {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              card_flat2x {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              card_flat_128 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              card_flat_256 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              card_flat_512 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              dark {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              dark2x {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              dark_128 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              dark_256 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              dark_512 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              flat {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              flat2x {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              flat_128 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              flat_256 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              flat_512 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              light {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              light2x {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              light_128 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              light_256 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              light_512 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              default {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              default2x {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              default_128 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              default_256 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              default_512 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            svg {
+              alt {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              card_flat {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              dark {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              flat {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              light {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              default {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+          }
+        }
+        loyaltyPrograms {
+          to
+          from
+          loyaltyProgram {
+            id
+            createdAt
+            updatedAt
+            programName
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            company {
+              id
+              name
+              description
+              media {
+                videos
+                deg360 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                pictures {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              address {
+                city
+                address
+                postCode
+                addressLine
+                location {
+                  type
+                  coordinates
+                }
+                country {
+                  id
+                  name
+                  code
+                  dialCode
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                }
+                state {
+                  id
+                  name
+                  code
+                  created
+                  surface
+                  dialCode
+                  country {
+                    id
+                    name
+                    code
+                    dialCode
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                    }
+                  }
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                }
+                owner {
+                  name
+                  phone {
+                    number
+                    countryCode
+                  }
+                }
+              }
+              legal {
+                vat
+                register
+                licence
+              }
+              banks {
+                id
+                holder {
+                  name
+                  type
+                  address {
+                    city
+                    address
+                    postCode
+                    addressLine
+                    location {
+                      type
+                      coordinates
+                    }
+                    country {
+                      id
+                      name
+                      code
+                      dialCode
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                      }
+                    }
+                    state {
+                      id
+                      name
+                      code
+                      created
+                      surface
+                      dialCode
+                      country {
+                        id
+                        name
+                        code
+                        dialCode
+                        iconFlag
+                        createdAt
+                        updatedAt
+                        flagSquare {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                        }
+                        flagWide {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                        }
+                      }
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                      }
+                    }
+                    owner {
+                      name
+                      phone {
+                        number
+                        countryCode
+                      }
+                    }
+                  }
+                }
+                account
+                iban
+                bank {
+                  id
+                  name
+                  code
+                  bic
+                  logo {
+                    svg {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                    }
+                    png {
+                      default {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                      }
+                      size16 {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                      }
+                      size24 {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                      }
+                      size32 {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                      }
+                      size48 {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                      }
+                      size64 {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                      }
+                      size128 {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                      }
+                      size256 {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                      }
+                      size512 {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                      }
+                    }
+                    icon
+                  }
+                  createdAt
+                  updatedAt
+                }
+                externalId
+                createdAt
+                updatedAt
+              }
+              contact {
+                website
+                email
+                phone {
+                  number
+                  isValid
+                  countryCode
+                  validationNumber
+                }
+              }
+              logistic
+              tags
+              externalId
+              createdAt
+              updatedAt
+            }
+          }
+        }
+      }
+      items {
+      classification {
+      id
+      title
+      description
+      icon
+      media {
+        videos
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      sections {
+        id
+        title
+        description
+        icon
+        media {
+          videos
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      flag
+      createdAt
+      updatedAt
+    }
+        value {
+          item {
+            id
+            title
+            description
+            icon
+            media {
+              videos
+              pictures {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              deg360 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+  classification {
+      id
+      title
+      description
+      icon
+      media {
+        videos
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      sections {
+        id
+        title
+        description
+        icon
+        media {
+          videos
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      flag
+      createdAt
+      updatedAt
+    }
+          }
+          flag
+        }
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+
+mutation createPosVisibility($input: PosVisibilityInput!) {
+  createPosVisibility(input: $input) {
     id
     section {
       id
@@ -1565,72 +3144,135 @@ query posVisibility($id: String!) {
   }
 }
 
-query getPosVisibilityByPosAndTarget(
-  $pagination: PaginationInput
-  $target: TargetACIInput!
-  $pos: ID!
-) {
-  getPosVisibilityByPosAndTarget(
-    pagination: $pagination
-    target: $target
-    pos: $pos
-  ) {
-    count
-    isLast
-    objects {
+mutation updatePosVisibility($id: ID!, $input: PosVisibilityInput!) {
+  updatePosVisibility(id: $id, input: $input) {
+    id
+    section {
       id
-      section {
-        id
-        title
-        description
-        icon
-        media {
-          videos
-          pictures {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          deg360 {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
+      title
+      description
+      icon
+      media {
+        videos
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
         }
-        owner
-        createdAt
-        updatedAt
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
       }
-      pos {
+      owner
+      createdAt
+      updatedAt
+    }
+    pos {
+      id
+      tags
+      name
+      title
+      email
+      phone
+      website
+      subtitle
+      currency
+      turnover
+      reference
+      published
+      createdAt
+      updatedAt
+      brandColor
+      isFollowed
+      description
+      contactEmails
+      averageCustomers
+      languages {
         id
-        tags
         name
-        title
-        email
-        phone
-        website
-        subtitle
-        currency
-        turnover
-        reference
-        published
+        code
+        iconFlag
         createdAt
         updatedAt
-        brandColor
-        isFollowed
-        description
-        contactEmails
-        averageCustomers
-        languages {
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      outsidePictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      insidePictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      openingHours {
+        status
+        hours {
+          day
+          from
+          to
+        }
+      }
+      specialOffers {
+        offerType
+        hours {
+          day
+          from
+          to
+        }
+      }
+      locations {
+        city
+        address
+        postCode
+        addressLine
+        location {
+          type
+          coordinates
+        }
+        country {
           id
           name
           code
+          dialCode
           iconFlag
           createdAt
           updatedAt
@@ -1651,47 +3293,289 @@ query getPosVisibilityByPosAndTarget(
             y
           }
         }
-        picture {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        outsidePictures {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        insidePictures {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        openingHours {
-          status
-          hours {
-            day
-            from
-            to
+        state {
+          id
+          name
+          code
+          created
+          surface
+          dialCode
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
           }
         }
-        specialOffers {
-          offerType
-          hours {
-            day
-            from
-            to
+        owner {
+          name
+          phone {
+            number
+            countryCode
           }
         }
-        locations {
+      }
+      chatContact {
+        name {
+          id
+          name
+          code
+          fontIcon
+          createdAt
+          updatedAt
+          images {
+            style
+            images {
+              svg {
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size96 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size144 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size240 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size480 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              png {
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size96 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size144 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size240 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size480 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+            }
+          }
+        }
+        value
+      }
+      socialMedia {
+        name {
+          id
+          name
+          code
+          fontIcon
+          createdAt
+          updatedAt
+          images {
+            style
+            images {
+              svg {
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size96 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size144 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size240 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size480 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              png {
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size96 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size144 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size240 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size480 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+            }
+          }
+        }
+        value
+      }
+      company {
+        id
+        name
+        description
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        address {
           city
           address
           postCode
@@ -1784,270 +3668,25 @@ query getPosVisibilityByPosAndTarget(
             }
           }
         }
-        chatContact {
-          name {
-            id
-            name
-            code
-            fontIcon
-            createdAt
-            updatedAt
-            images {
-              style
-              images {
-                svg {
-                  size48 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size96 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size144 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size240 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size480 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                }
-                png {
-                  size48 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size96 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size144 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size240 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size480 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                }
-              }
-            }
-          }
-          value
+        legal {
+          vat
+          register
+          licence
         }
-        socialMedia {
-          name {
-            id
-            name
-            code
-            fontIcon
-            createdAt
-            updatedAt
-            images {
-              style
-              images {
-                svg {
-                  size48 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size96 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size144 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size240 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size480 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                }
-                png {
-                  size48 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size96 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size144 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size240 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size480 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                }
-              }
-            }
-          }
-          value
-        }
-        company {
+        banks {
           id
-          name
-          description
-          media {
-            videos
-            deg360 {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            pictures {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          address {
-            city
-            address
-            postCode
-            addressLine
-            location {
-              type
-              coordinates
-            }
-            country {
-              id
-              name
-              code
-              dialCode
-              iconFlag
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
+          holder {
+            name
+            type
+            address {
+              city
+              address
+              postCode
+              addressLine
+              location {
+                type
+                coordinates
               }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            state {
-              id
-              name
-              code
-              created
-              surface
-              dialCode
               country {
                 id
                 name
@@ -2073,52 +3712,13 @@ query getPosVisibilityByPosAndTarget(
                   y
                 }
               }
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            owner {
-              name
-              phone {
-                number
-                countryCode
-              }
-            }
-          }
-          legal {
-            vat
-            register
-            licence
-          }
-          banks {
-            id
-            holder {
-              name
-              type
-              address {
-                city
-                address
-                postCode
-                addressLine
-                location {
-                  type
-                  coordinates
-                }
+              state {
+                id
+                name
+                code
+                created
+                surface
+                dialCode
                 country {
                   id
                   name
@@ -2144,75 +3744,9 @@ query getPosVisibilityByPosAndTarget(
                     y
                   }
                 }
-                state {
-                  id
-                  name
-                  code
-                  created
-                  surface
-                  dialCode
-                  country {
-                    id
-                    name
-                    code
-                    dialCode
-                    iconFlag
-                    createdAt
-                    updatedAt
-                    flagSquare {
-                      baseUrl
-                      path
-                      width
-                      height
-                      x
-                      y
-                    }
-                    flagWide {
-                      baseUrl
-                      path
-                      width
-                      height
-                      x
-                      y
-                    }
-                  }
-                  createdAt
-                  updatedAt
-                  flagSquare {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  flagWide {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                }
-                owner {
-                  name
-                  phone {
-                    number
-                    countryCode
-                  }
-                }
-              }
-            }
-            account
-            iban
-            bank {
-              id
-              name
-              code
-              bic
-              logo {
-                svg {
+                createdAt
+                updatedAt
+                flagSquare {
                   baseUrl
                   path
                   width
@@ -2220,111 +3754,472 @@ query getPosVisibilityByPosAndTarget(
                   x
                   y
                 }
-                png {
-                  default {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size16 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size24 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size32 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size48 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size64 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size128 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size256 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size512 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
                 }
-                icon
               }
-              createdAt
-              updatedAt
+              owner {
+                name
+                phone {
+                  number
+                  countryCode
+                }
+              }
             }
-            externalId
+          }
+          account
+          iban
+          bank {
+            id
+            name
+            code
+            bic
+            logo {
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              png {
+                default {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size16 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size24 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size32 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size64 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size128 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size256 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                size512 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              icon
+            }
             createdAt
             updatedAt
           }
-          contact {
-            website
-            email
-            phone {
-              number
-              isValid
-              countryCode
-              validationNumber
-            }
-          }
-          logistic
-          tags
           externalId
           createdAt
           updatedAt
         }
-        posCategory {
+        contact {
+          website
+          email
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
+        }
+        logistic
+        tags
+        externalId
+        createdAt
+        updatedAt
+      }
+      posCategory {
+        id
+        name
+        mapPicture
+        createdAt
+        updatedAt
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      services {
+        id
+        index
+        name
+        createdAt
+        updatedAt
+      }
+      paymentMethods {
+        id
+        name
+        code
+        paymentType
+        materialIcon
+        createdAt
+        updatedAt
+        images {
+          png {
+            alt {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            alt2x {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            alt_128 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            alt_256 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            alt_512 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            card_flat {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            card_flat2x {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            card_flat_128 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            card_flat_256 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            card_flat_512 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            dark {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            dark2x {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            dark_128 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            dark_256 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            dark_512 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            flat {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            flat2x {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            flat_128 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            flat_256 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            flat_512 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            light {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            light2x {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            light_128 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            light_256 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            light_512 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            default {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            default2x {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            default_128 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            default_256 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            default_512 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          svg {
+            alt {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            card_flat {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            dark {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            flat {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            light {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            default {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+        }
+      }
+      loyaltyPrograms {
+        to
+        from
+        loyaltyProgram {
           id
-          name
-          mapPicture
           createdAt
           updatedAt
+          programName
           picture {
             baseUrl
             path
@@ -2333,340 +4228,47 @@ query getPosVisibilityByPosAndTarget(
             x
             y
           }
-        }
-        services {
-          id
-          index
-          name
-          createdAt
-          updatedAt
-        }
-        paymentMethods {
-          id
-          name
-          code
-          paymentType
-          materialIcon
-          createdAt
-          updatedAt
-          images {
-            png {
-              alt {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              alt2x {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              alt_128 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              alt_256 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              alt_512 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              card_flat {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              card_flat2x {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              card_flat_128 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              card_flat_256 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              card_flat_512 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              dark {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              dark2x {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              dark_128 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              dark_256 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              dark_512 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flat {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flat2x {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flat_128 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flat_256 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flat_512 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              light {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              light2x {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              light_128 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              light_256 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              light_512 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              default {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              default2x {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              default_128 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              default_256 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              default_512 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            svg {
-              alt {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              card_flat {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              dark {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flat {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              light {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              default {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-          }
-        }
-        loyaltyPrograms {
-          to
-          from
-          loyaltyProgram {
+          company {
             id
-            createdAt
-            updatedAt
-            programName
-            picture {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
+            name
+            description
+            media {
+              videos
+              deg360 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              pictures {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
             }
-            company {
-              id
-              name
-              description
-              media {
-                videos
-                deg360 {
+            address {
+              city
+              address
+              postCode
+              addressLine
+              location {
+                type
+                coordinates
+              }
+              country {
+                id
+                name
+                code
+                dialCode
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
                   baseUrl
                   path
                   width
@@ -2674,7 +4276,7 @@ query getPosVisibilityByPosAndTarget(
                   x
                   y
                 }
-                pictures {
+                flagWide {
                   baseUrl
                   path
                   width
@@ -2683,15 +4285,13 @@ query getPosVisibilityByPosAndTarget(
                   y
                 }
               }
-              address {
-                city
-                address
-                postCode
-                addressLine
-                location {
-                  type
-                  coordinates
-                }
+              state {
+                id
+                name
+                code
+                created
+                surface
+                dialCode
                 country {
                   id
                   name
@@ -2717,13 +4317,52 @@ query getPosVisibilityByPosAndTarget(
                     y
                   }
                 }
-                state {
-                  id
-                  name
-                  code
-                  created
-                  surface
-                  dialCode
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              owner {
+                name
+                phone {
+                  number
+                  countryCode
+                }
+              }
+            }
+            legal {
+              vat
+              register
+              licence
+            }
+            banks {
+              id
+              holder {
+                name
+                type
+                address {
+                  city
+                  address
+                  postCode
+                  addressLine
+                  location {
+                    type
+                    coordinates
+                  }
                   country {
                     id
                     name
@@ -2749,52 +4388,13 @@ query getPosVisibilityByPosAndTarget(
                       y
                     }
                   }
-                  createdAt
-                  updatedAt
-                  flagSquare {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  flagWide {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                }
-                owner {
-                  name
-                  phone {
-                    number
-                    countryCode
-                  }
-                }
-              }
-              legal {
-                vat
-                register
-                licence
-              }
-              banks {
-                id
-                holder {
-                  name
-                  type
-                  address {
-                    city
-                    address
-                    postCode
-                    addressLine
-                    location {
-                      type
-                      coordinates
-                    }
+                  state {
+                    id
+                    name
+                    code
+                    created
+                    surface
+                    dialCode
                     country {
                       id
                       name
@@ -2820,75 +4420,9 @@ query getPosVisibilityByPosAndTarget(
                         y
                       }
                     }
-                    state {
-                      id
-                      name
-                      code
-                      created
-                      surface
-                      dialCode
-                      country {
-                        id
-                        name
-                        code
-                        dialCode
-                        iconFlag
-                        createdAt
-                        updatedAt
-                        flagSquare {
-                          baseUrl
-                          path
-                          width
-                          height
-                          x
-                          y
-                        }
-                        flagWide {
-                          baseUrl
-                          path
-                          width
-                          height
-                          x
-                          y
-                        }
-                      }
-                      createdAt
-                      updatedAt
-                      flagSquare {
-                        baseUrl
-                        path
-                        width
-                        height
-                        x
-                        y
-                      }
-                      flagWide {
-                        baseUrl
-                        path
-                        width
-                        height
-                        x
-                        y
-                      }
-                    }
-                    owner {
-                      name
-                      phone {
-                        number
-                        countryCode
-                      }
-                    }
-                  }
-                }
-                account
-                iban
-                bank {
-                  id
-                  name
-                  code
-                  bic
-                  logo {
-                    svg {
+                    createdAt
+                    updatedAt
+                    flagSquare {
                       baseUrl
                       path
                       width
@@ -2896,110 +4430,168 @@ query getPosVisibilityByPosAndTarget(
                       x
                       y
                     }
-                    png {
-                      default {
-                        baseUrl
-                        path
-                        width
-                        height
-                        x
-                        y
-                      }
-                      size16 {
-                        baseUrl
-                        path
-                        width
-                        height
-                        x
-                        y
-                      }
-                      size24 {
-                        baseUrl
-                        path
-                        width
-                        height
-                        x
-                        y
-                      }
-                      size32 {
-                        baseUrl
-                        path
-                        width
-                        height
-                        x
-                        y
-                      }
-                      size48 {
-                        baseUrl
-                        path
-                        width
-                        height
-                        x
-                        y
-                      }
-                      size64 {
-                        baseUrl
-                        path
-                        width
-                        height
-                        x
-                        y
-                      }
-                      size128 {
-                        baseUrl
-                        path
-                        width
-                        height
-                        x
-                        y
-                      }
-                      size256 {
-                        baseUrl
-                        path
-                        width
-                        height
-                        x
-                        y
-                      }
-                      size512 {
-                        baseUrl
-                        path
-                        width
-                        height
-                        x
-                        y
-                      }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
                     }
-                    icon
                   }
-                  createdAt
-                  updatedAt
+                  owner {
+                    name
+                    phone {
+                      number
+                      countryCode
+                    }
+                  }
                 }
-                externalId
+              }
+              account
+              iban
+              bank {
+                id
+                name
+                code
+                bic
+                logo {
+                  svg {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  png {
+                    default {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                    }
+                    size16 {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                    }
+                    size24 {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                    }
+                    size32 {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                    }
+                    size48 {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                    }
+                    size64 {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                    }
+                    size128 {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                    }
+                    size256 {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                    }
+                    size512 {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                    }
+                  }
+                  icon
+                }
                 createdAt
                 updatedAt
               }
-              contact {
-                website
-                email
-                phone {
-                  number
-                  isValid
-                  countryCode
-                  validationNumber
-                }
-              }
-              logistic
-              tags
               externalId
               createdAt
               updatedAt
             }
+            contact {
+              website
+              email
+              phone {
+                number
+                isValid
+                countryCode
+                validationNumber
+              }
+            }
+            logistic
+            tags
+            externalId
+            createdAt
+            updatedAt
           }
         }
       }
-      items {
-        classification {
+    }
+    items {
+      classification {
+        id
+        title
+        description
+        icon
+        media {
+          videos
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        sections {
           id
           title
           description
@@ -3023,39 +4615,39 @@ query getPosVisibilityByPosAndTarget(
               y
             }
           }
-          sections {
-            id
-            title
-            description
-            icon
-            media {
-              videos
-              pictures {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              deg360 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            createdAt
-            updatedAt
-          }
-          flag
           createdAt
           updatedAt
         }
-        value {
-          item {
+        flag
+        createdAt
+        updatedAt
+      }
+      value {
+        item {
+          id
+          title
+          description
+          icon
+          media {
+            videos
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          classification {
             id
             title
             description
@@ -3079,7 +4671,7 @@ query getPosVisibilityByPosAndTarget(
                 y
               }
             }
-            classification {
+            sections {
               id
               title
               description
@@ -3103,43 +4695,18 @@ query getPosVisibilityByPosAndTarget(
                   y
                 }
               }
-              sections {
-                id
-                title
-                description
-                icon
-                media {
-                  videos
-                  pictures {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  deg360 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                }
-                createdAt
-                updatedAt
-              }
-              flag
               createdAt
               updatedAt
             }
+            flag
+            createdAt
+            updatedAt
           }
-          flag
         }
+        flag
       }
-      createdAt
-      updatedAt
     }
+    createdAt
+    updatedAt
   }
 }

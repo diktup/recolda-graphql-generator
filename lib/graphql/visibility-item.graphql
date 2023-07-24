@@ -1,33 +1,20 @@
-query visibilityItem($id: String!) {
-  visibilityItem(id: $id) {
-    id
-    title
-    description
-    icon
-    media {
-      videos
-      pictures {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-      }
-      deg360 {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-      }
-    }
-    classification {
+query getVisibilityItemsByClassificationPaginated(
+  $classification: ID!
+  $pagination: PaginationInput
+) {
+  getVisibilityItemsByClassificationPaginated(
+    classification: $classification
+    pagination: $pagination
+  ) {
+    count
+    isLast
+    objects {
       id
       title
       description
+
       icon
+
       media {
         videos
         pictures {
@@ -47,7 +34,7 @@ query visibilityItem($id: String!) {
           y
         }
       }
-      sections {
+      classification {
         id
         title
         description
@@ -71,15 +58,213 @@ query visibilityItem($id: String!) {
             y
           }
         }
+        sections {
+          id
+          title
+          description
+          icon
+          media {
+            videos
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          createdAt
+          updatedAt
+        }
+        flag
         createdAt
         updatedAt
       }
-
-      flag
       createdAt
       updatedAt
     }
-    createdAt
-    updatedAt
+  }
+}
+
+mutation createVisibilityItem($input: VisibilityItemInput!) {
+  createVisibilityItem(input: $input) {
+     id
+      title
+      description
+
+      icon
+
+      media {
+        videos
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      classification {
+        id
+        title
+        description
+        icon
+        media {
+          videos
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        sections {
+          id
+          title
+          description
+          icon
+          media {
+            videos
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          createdAt
+          updatedAt
+        }
+        flag
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+  }
+}
+
+mutation updateVisibilityItem($id: ID!, $input: VisibilityItemInput!) {
+  updateVisibilityItem(id: $id, input: $input) {
+   id
+      title
+      description
+
+      icon
+
+      media {
+        videos
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      classification {
+        id
+        title
+        description
+        icon
+        media {
+          videos
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        sections {
+          id
+          title
+          description
+          icon
+          media {
+            videos
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          createdAt
+          updatedAt
+        }
+        flag
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
   }
 }
