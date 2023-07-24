@@ -4251,6 +4251,4340 @@ class PosVisibility$Query extends JsonSerializable with EquatableMixin {
   Map<String, dynamic> toJson() => _$PosVisibility$QueryToJson(this);
 }
 
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$VisibilitySectionType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$VisibilitySectionType$MediaType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$VisibilitySectionType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$VisibilitySectionType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$VisibilitySectionType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$VisibilitySectionType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$VisibilitySectionType$MediaType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$VisibilitySectionType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$VisibilitySectionType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$VisibilitySectionType$MediaType$PictureType>?
+      pictures;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$VisibilitySectionType$MediaType$PictureType>?
+      deg360;
+
+  @override
+  List<Object?> get props => [videos, pictures, deg360];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$VisibilitySectionType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$VisibilitySectionType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$VisibilitySectionType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$VisibilitySectionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$VisibilitySectionTypeFromJson(
+          json);
+
+  late String id;
+
+  String? title;
+
+  String? description;
+
+  String? icon;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$VisibilitySectionType$MediaType?
+      media;
+
+  @JsonKey(unknownEnumValue: VisibilityOwnerEnum.artemisUnknown)
+  late VisibilityOwnerEnum owner;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props =>
+      [id, title, description, icon, media, owner, createdAt, updatedAt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$VisibilitySectionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$LanguageType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$LanguageType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$LanguageType$PictureType?
+      flagSquare;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$OpeningHoursType$OpeningHoursDayType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$OpeningHoursType$OpeningHoursDayType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$OpeningHoursType$OpeningHoursDayType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$OpeningHoursType$OpeningHoursDayTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: Days.artemisUnknown)
+  Days? day;
+
+  String? from;
+
+  String? to;
+
+  @override
+  List<Object?> get props => [day, from, to];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$OpeningHoursType$OpeningHoursDayTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$OpeningHoursType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$OpeningHoursType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$OpeningHoursType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$OpeningHoursTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: OpeningStatus.artemisUnknown)
+  OpeningStatus? status;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$OpeningHoursType$OpeningHoursDayType>?
+      hours;
+
+  @override
+  List<Object?> get props => [status, hours];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$OpeningHoursTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SpecialOfferType$OpeningHoursDayType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SpecialOfferType$OpeningHoursDayType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SpecialOfferType$OpeningHoursDayType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SpecialOfferType$OpeningHoursDayTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: Days.artemisUnknown)
+  Days? day;
+
+  String? from;
+
+  String? to;
+
+  @override
+  List<Object?> get props => [day, from, to];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SpecialOfferType$OpeningHoursDayTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SpecialOfferType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SpecialOfferType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SpecialOfferType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SpecialOfferTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: SpecialOffersType.artemisUnknown)
+  SpecialOffersType? offerType;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SpecialOfferType$OpeningHoursDayType>?
+      hours;
+
+  @override
+  List<Object?> get props => [offerType, hours];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SpecialOfferTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$LonLatType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$LonLatType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$LonLatType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$LonLatTypeFromJson(
+          json);
+
+  String? type;
+
+  List<double>? coordinates;
+
+  @override
+  List<Object?> get props => [type, coordinates];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$LonLatTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$CountryType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$CountryType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$CountryType$PictureType?
+      flagSquare;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$CountryType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  late DateTime created;
+
+  late String surface;
+
+  String? dialCode;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$PictureType?
+      flagSquare;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        created,
+        surface,
+        dialCode,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  String? countryCode;
+
+  @override
+  List<Object?> get props => [number, countryCode];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$FullAddressOwnerType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$FullAddressOwnerType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$FullAddressOwnerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$FullAddressOwnerTypeFromJson(
+          json);
+
+  String? name;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [name, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$FullAddressOwnerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressTypeFromJson(
+          json);
+
+  String? city;
+
+  String? address;
+
+  String? postCode;
+
+  String? addressLine;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$LonLatType?
+      location;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$CountryType?
+      country;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$StateType?
+      state;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType$FullAddressOwnerType?
+      owner;
+
+  @override
+  List<Object?> get props =>
+      [city, address, postCode, addressLine, location, country, state, owner];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
+          json);
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType?
+      size48;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType?
+      size96;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType?
+      size144;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType?
+      size240;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType?
+      size480;
+
+  @override
+  List<Object?> get props => [size48, size96, size144, size240, size480];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
+          json);
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType?
+      svg;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType?
+      png;
+
+  @override
+  List<Object?> get props => [svg, png];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: SocialImageStyleEnum.artemisUnknown)
+  late SocialImageStyleEnum style;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType>?
+      images;
+
+  @override
+  List<Object?> get props => [style, images];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? fontIcon;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType>?
+      images;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, fontIcon, createdAt, updatedAt, images];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueTypeFromJson(
+          json);
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType$SocialType?
+      name;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [name, value];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$MediaType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$MediaType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$MediaType$PictureType>?
+      deg360;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$MediaType$PictureType>?
+      pictures;
+
+  @override
+  List<Object?> get props => [videos, deg360, pictures];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$LonLatType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$LonLatType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$LonLatType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$LonLatTypeFromJson(
+          json);
+
+  String? type;
+
+  List<double>? coordinates;
+
+  @override
+  List<Object?> get props => [type, coordinates];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$LonLatTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$CountryType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureType?
+      flagSquare;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  late DateTime created;
+
+  late String surface;
+
+  String? dialCode;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureType?
+      flagSquare;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        created,
+        surface,
+        dialCode,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  String? countryCode;
+
+  @override
+  List<Object?> get props => [number, countryCode];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
+          json);
+
+  String? name;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [name, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressTypeFromJson(
+          json);
+
+  String? city;
+
+  String? address;
+
+  String? postCode;
+
+  String? addressLine;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$LonLatType?
+      location;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$CountryType?
+      country;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$StateType?
+      state;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType?
+      owner;
+
+  @override
+  List<Object?> get props =>
+      [city, address, postCode, addressLine, location, country, state, owner];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$CompanyLegalType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$CompanyLegalType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$CompanyLegalType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$CompanyLegalTypeFromJson(
+          json);
+
+  String? vat;
+
+  String? register;
+
+  String? licence;
+
+  @override
+  List<Object?> get props => [vat, register, licence];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$CompanyLegalTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
+          json);
+
+  String? type;
+
+  List<double>? coordinates;
+
+  @override
+  List<Object?> get props => [type, coordinates];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType?
+      flagSquare;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  late DateTime created;
+
+  late String surface;
+
+  String? dialCode;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType?
+      flagSquare;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        created,
+        surface,
+        dialCode,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  String? countryCode;
+
+  @override
+  List<Object?> get props => [number, countryCode];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
+          json);
+
+  String? name;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [name, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
+          json);
+
+  String? city;
+
+  String? address;
+
+  String? postCode;
+
+  String? addressLine;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
+      location;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType?
+      country;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType?
+      state;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType?
+      owner;
+
+  @override
+  List<Object?> get props =>
+      [city, address, postCode, addressLine, location, country, state, owner];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
+          json);
+
+  late String name;
+
+  @JsonKey(unknownEnumValue: BankDetailsHolderTypeEnum.artemisUnknown)
+  BankDetailsHolderTypeEnum? type;
+
+  late GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+      address;
+
+  @override
+  List<Object?> get props => [name, type, address];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
+          json);
+
+  @JsonKey(name: 'default')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      kw$default;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size16;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size24;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size32;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size48;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size64;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size128;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size256;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size512;
+
+  @override
+  List<Object?> get props => [
+        kw$default,
+        size16,
+        size24,
+        size32,
+        size48,
+        size64,
+        size128,
+        size256,
+        size512
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
+          json);
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType?
+      svg;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType?
+      png;
+
+  String? icon;
+
+  @override
+  List<Object?> get props => [svg, png, icon];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? bic;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType?
+      logo;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsTypeFromJson(
+          json);
+
+  late String id;
+
+  late GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType
+      holder;
+
+  late String account;
+
+  String? iban;
+
+  late GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType$BankType
+      bank;
+
+  String? externalId;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props =>
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$CompanyContactDetailsType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$CompanyContactDetailsType$PhoneType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$CompanyContactDetailsType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$CompanyContactDetailsType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$CompanyContactDetailsType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$CompanyContactDetailsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$CompanyContactDetailsTypeFromJson(
+          json);
+
+  String? website;
+
+  String? email;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$CompanyContactDetailsType$PhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [website, email, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$CompanyContactDetailsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  String? description;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$MediaType?
+      media;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$FullAddressType?
+      address;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$CompanyLegalType?
+      legal;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$BankDetailsType>?
+      banks;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType$CompanyContactDetailsType?
+      contact;
+
+  bool? logistic;
+
+  List<String>? tags;
+
+  String? externalId;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        description,
+        media,
+        address,
+        legal,
+        banks,
+        contact,
+        logistic,
+        tags,
+        externalId,
+        createdAt,
+        updatedAt
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSCategoryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSCategoryType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSCategoryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSCategoryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSCategoryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSCategoryType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSCategoryType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSCategoryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSCategoryTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  String? mapPicture;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSCategoryType$PictureType?
+      picture;
+
+  @override
+  List<Object?> get props =>
+      [id, name, mapPicture, createdAt, updatedAt, picture];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSCategoryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSServicesType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSServicesType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSServicesType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSServicesTypeFromJson(
+          json);
+
+  String? id;
+
+  int? index;
+
+  String? name;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [id, index, name, createdAt, updatedAt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSServicesTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngTypeFromJson(
+          json);
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      alt;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      alt2x;
+
+  @JsonKey(name: 'alt_128')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      alt128;
+
+  @JsonKey(name: 'alt_256')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      alt256;
+
+  @JsonKey(name: 'alt_512')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      alt512;
+
+  @JsonKey(name: 'card_flat')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      cardFlat;
+
+  @JsonKey(name: 'card_flat2x')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      cardFlat2x;
+
+  @JsonKey(name: 'card_flat_128')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      cardFlat128;
+
+  @JsonKey(name: 'card_flat_256')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      cardFlat256;
+
+  @JsonKey(name: 'card_flat_512')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      cardFlat512;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      dark;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      dark2x;
+
+  @JsonKey(name: 'dark_128')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      dark128;
+
+  @JsonKey(name: 'dark_256')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      dark256;
+
+  @JsonKey(name: 'dark_512')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      dark512;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      flat;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      flat2x;
+
+  @JsonKey(name: 'flat_128')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      flat128;
+
+  @JsonKey(name: 'flat_256')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      flat256;
+
+  @JsonKey(name: 'flat_512')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      flat512;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      light;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      light2x;
+
+  @JsonKey(name: 'light_128')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      light128;
+
+  @JsonKey(name: 'light_256')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      light256;
+
+  @JsonKey(name: 'light_512')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      light512;
+
+  @JsonKey(name: 'default')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      kw$default;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      default2x;
+
+  @JsonKey(name: 'default_128')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      default128;
+
+  @JsonKey(name: 'default_256')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      default256;
+
+  @JsonKey(name: 'default_512')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType?
+      default512;
+
+  @override
+  List<Object?> get props => [
+        alt,
+        alt2x,
+        alt128,
+        alt256,
+        alt512,
+        cardFlat,
+        cardFlat2x,
+        cardFlat128,
+        cardFlat256,
+        cardFlat512,
+        dark,
+        dark2x,
+        dark128,
+        dark256,
+        dark512,
+        flat,
+        flat2x,
+        flat128,
+        flat256,
+        flat512,
+        light,
+        light2x,
+        light128,
+        light256,
+        light512,
+        kw$default,
+        default2x,
+        default128,
+        default256,
+        default512
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgTypeFromJson(
+          json);
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType?
+      alt;
+
+  @JsonKey(name: 'card_flat')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType?
+      cardFlat;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType?
+      dark;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType?
+      flat;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType?
+      light;
+
+  @JsonKey(name: 'default')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType?
+      kw$default;
+
+  @override
+  List<Object?> get props => [alt, cardFlat, dark, flat, light, kw$default];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesTypeFromJson(
+          json);
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType?
+      png;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType?
+      svg;
+
+  @override
+  List<Object?> get props => [png, svg];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  @JsonKey(unknownEnumValue: PaymentTypeEnum.artemisUnknown)
+  PaymentTypeEnum? paymentType;
+
+  String? materialIcon;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType$PaymentImagesType?
+      images;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, paymentType, materialIcon, createdAt, updatedAt, images];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureType>?
+      deg360;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureType>?
+      pictures;
+
+  @override
+  List<Object?> get props => [videos, deg360, pictures];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatTypeFromJson(
+          json);
+
+  String? type;
+
+  List<double>? coordinates;
+
+  @override
+  List<Object?> get props => [type, coordinates];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureType?
+      flagSquare;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  late DateTime created;
+
+  late String surface;
+
+  String? dialCode;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureType?
+      flagSquare;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        created,
+        surface,
+        dialCode,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  String? countryCode;
+
+  @override
+  List<Object?> get props => [number, countryCode];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
+          json);
+
+  String? name;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [name, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressTypeFromJson(
+          json);
+
+  String? city;
+
+  String? address;
+
+  String? postCode;
+
+  String? addressLine;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatType?
+      location;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType?
+      country;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType?
+      state;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType?
+      owner;
+
+  @override
+  List<Object?> get props =>
+      [city, address, postCode, addressLine, location, country, state, owner];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalTypeFromJson(
+          json);
+
+  String? vat;
+
+  String? register;
+
+  String? licence;
+
+  @override
+  List<Object?> get props => [vat, register, licence];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
+          json);
+
+  String? type;
+
+  List<double>? coordinates;
+
+  @override
+  List<Object?> get props => [type, coordinates];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType?
+      flagSquare;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  late DateTime created;
+
+  late String surface;
+
+  String? dialCode;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType?
+      flagSquare;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        created,
+        surface,
+        dialCode,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  String? countryCode;
+
+  @override
+  List<Object?> get props => [number, countryCode];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
+          json);
+
+  String? name;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [name, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
+          json);
+
+  String? city;
+
+  String? address;
+
+  String? postCode;
+
+  String? addressLine;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
+      location;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType?
+      country;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType?
+      state;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType?
+      owner;
+
+  @override
+  List<Object?> get props =>
+      [city, address, postCode, addressLine, location, country, state, owner];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
+          json);
+
+  late String name;
+
+  @JsonKey(unknownEnumValue: BankDetailsHolderTypeEnum.artemisUnknown)
+  BankDetailsHolderTypeEnum? type;
+
+  late GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+      address;
+
+  @override
+  List<Object?> get props => [name, type, address];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
+          json);
+
+  @JsonKey(name: 'default')
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      kw$default;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size16;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size24;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size32;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size48;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size64;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size128;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size256;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size512;
+
+  @override
+  List<Object?> get props => [
+        kw$default,
+        size16,
+        size24,
+        size32,
+        size48,
+        size64,
+        size128,
+        size256,
+        size512
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
+          json);
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType?
+      svg;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType?
+      png;
+
+  String? icon;
+
+  @override
+  List<Object?> get props => [svg, png, icon];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? bic;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType?
+      logo;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsTypeFromJson(
+          json);
+
+  late String id;
+
+  late GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType
+      holder;
+
+  late String account;
+
+  String? iban;
+
+  late GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType
+      bank;
+
+  String? externalId;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props =>
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsTypeFromJson(
+          json);
+
+  String? website;
+
+  String? email;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [website, email, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  String? description;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType?
+      media;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType?
+      address;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalType?
+      legal;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType>?
+      banks;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType?
+      contact;
+
+  bool? logistic;
+
+  List<String>? tags;
+
+  String? externalId;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        description,
+        media,
+        address,
+        legal,
+        banks,
+        contact,
+        logistic,
+        tags,
+        externalId,
+        createdAt,
+        updatedAt
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramTypeFromJson(
+          json);
+
+  late String id;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  String? programName;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$PictureType?
+      picture;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType?
+      company;
+
+  @override
+  List<Object?> get props =>
+      [id, createdAt, updatedAt, programName, picture, company];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyTypeFromJson(
+          json);
+
+  late DateTime to;
+
+  late DateTime from;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType?
+      loyaltyProgram;
+
+  @override
+  List<Object?> get props => [to, from, loyaltyProgram];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  List<String>? tags;
+
+  String? name;
+
+  String? title;
+
+  List<String>? email;
+
+  List<String>? phone;
+
+  String? website;
+
+  String? subtitle;
+
+  @JsonKey(unknownEnumValue: Currency.artemisUnknown)
+  Currency? currency;
+
+  String? turnover;
+
+  String? reference;
+
+  bool? published;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  String? brandColor;
+
+  bool? isFollowed;
+
+  String? description;
+
+  List<String>? contactEmails;
+
+  double? averageCustomers;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$LanguageType>?
+      languages;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PictureType?
+      picture;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PictureType>?
+      outsidePictures;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PictureType>?
+      insidePictures;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$OpeningHoursType?
+      openingHours;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SpecialOfferType>?
+      specialOffers;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$FullAddressType>?
+      locations;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType>?
+      chatContact;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$SocialValueType>?
+      socialMedia;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$CompanyType?
+      company;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSCategoryType>?
+      posCategory;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSServicesType>?
+      services;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$PaymentType>?
+      paymentMethods;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType$POSLoyaltyType>?
+      loyaltyPrograms;
+
+  @override
+  List<Object?> get props => [
+        id,
+        tags,
+        name,
+        title,
+        email,
+        phone,
+        website,
+        subtitle,
+        currency,
+        turnover,
+        reference,
+        published,
+        createdAt,
+        updatedAt,
+        brandColor,
+        isFollowed,
+        description,
+        contactEmails,
+        averageCustomers,
+        languages,
+        picture,
+        outsidePictures,
+        insidePictures,
+        openingHours,
+        specialOffers,
+        locations,
+        chatContact,
+        socialMedia,
+        company,
+        posCategory,
+        services,
+        paymentMethods,
+        loyaltyPrograms
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$MediaType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$MediaType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$MediaType$PictureType>?
+      pictures;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$MediaType$PictureType>?
+      deg360;
+
+  @override
+  List<Object?> get props => [videos, pictures, deg360];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureType>?
+      pictures;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureType>?
+      deg360;
+
+  @override
+  List<Object?> get props => [videos, pictures, deg360];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$VisibilitySectionType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$VisibilitySectionType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$VisibilitySectionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$VisibilitySectionTypeFromJson(
+          json);
+
+  late String id;
+
+  String? title;
+
+  String? description;
+
+  String? icon;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType?
+      media;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props =>
+      [id, title, description, icon, media, createdAt, updatedAt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$VisibilitySectionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationTypeFromJson(
+          json);
+
+  late String id;
+
+  late String title;
+
+  String? description;
+
+  String? icon;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$MediaType?
+      media;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType$VisibilitySectionType>?
+      sections;
+
+  bool? flag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [
+        id,
+        title,
+        description,
+        icon,
+        media,
+        sections,
+        flag,
+        createdAt,
+        updatedAt
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$MediaType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$MediaType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$MediaType$PictureType>?
+      pictures;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$MediaType$PictureType>?
+      deg360;
+
+  @override
+  List<Object?> get props => [videos, pictures, deg360];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$MediaType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$MediaType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$MediaType$PictureType>?
+      pictures;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$MediaType$PictureType>?
+      deg360;
+
+  @override
+  List<Object?> get props => [videos, pictures, deg360];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureType>?
+      pictures;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType$PictureType>?
+      deg360;
+
+  @override
+  List<Object?> get props => [videos, pictures, deg360];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$VisibilitySectionType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$VisibilitySectionType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$VisibilitySectionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$VisibilitySectionTypeFromJson(
+          json);
+
+  late String id;
+
+  String? title;
+
+  String? description;
+
+  String? icon;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$VisibilitySectionType$MediaType?
+      media;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props =>
+      [id, title, description, icon, media, createdAt, updatedAt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$VisibilitySectionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationTypeFromJson(
+          json);
+
+  late String id;
+
+  late String title;
+
+  String? description;
+
+  String? icon;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$MediaType?
+      media;
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType$VisibilitySectionType>?
+      sections;
+
+  bool? flag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [
+        id,
+        title,
+        description,
+        icon,
+        media,
+        sections,
+        flag,
+        createdAt,
+        updatedAt
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemTypeFromJson(
+          json);
+
+  late String id;
+
+  late String title;
+
+  String? description;
+
+  String? icon;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$MediaType?
+      media;
+
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType$VisibilityClassificationType?
+      classification;
+
+  @override
+  List<Object?> get props =>
+      [id, title, description, icon, media, classification];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueTypeFromJson(
+          json);
+
+  List<GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType$VisibilityItemType>?
+      item;
+
+  bool? flag;
+
+  @override
+  List<Object?> get props => [item, flag];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemTypeFromJson(
+          json);
+
+  late GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$VisibilityClassificationType
+      classification;
+
+  late GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType$PosVisibilityItemValueType
+      value;
+
+  @override
+  List<Object?> get props => [classification, value];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityTypeFromJson(
+          json);
+
+  late String id;
+
+  late GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$VisibilitySectionType
+      section;
+
+  late GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PointOfSaleType
+      pos;
+
+  late List<
+          GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType$PosVisibilityItemType>
+      items;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [id, section, pos, items, createdAt, updatedAt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType
+    extends JsonSerializable with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType();
+
+  factory GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityTypeFromJson(
+          json);
+
+  int? count;
+
+  bool? isLast;
+
+  late List<
+          GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType$PosVisibilityType>
+      objects;
+
+  @override
+  List<Object?> get props => [count, isLast, objects];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTarget$Query extends JsonSerializable
+    with EquatableMixin {
+  GetPosVisibilityByPosAndTarget$Query();
+
+  factory GetPosVisibilityByPosAndTarget$Query.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTarget$QueryFromJson(json);
+
+  late GetPosVisibilityByPosAndTarget$Query$PaginatedPosVisibilityType
+      getPosVisibilityByPosAndTarget;
+
+  @override
+  List<Object?> get props => [getPosVisibilityByPosAndTarget];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTarget$QueryToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class PaginationInput extends JsonSerializable with EquatableMixin {
+  PaginationInput({
+    this.page,
+    this.limit,
+  });
+
+  factory PaginationInput.fromJson(Map<String, dynamic> json) =>
+      _$PaginationInputFromJson(json);
+
+  int? page;
+
+  int? limit;
+
+  @override
+  List<Object?> get props => [page, limit];
+  @override
+  Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class TargetACIInput extends JsonSerializable with EquatableMixin {
+  TargetACIInput({
+    this.pos,
+    this.wholesaler,
+    this.manufacturer,
+    this.user,
+  });
+
+  factory TargetACIInput.fromJson(Map<String, dynamic> json) =>
+      _$TargetACIInputFromJson(json);
+
+  String? pos;
+
+  String? wholesaler;
+
+  String? manufacturer;
+
+  String? user;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer, user];
+  @override
+  Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
+}
+
 enum VisibilityOwnerEnum {
   @JsonValue('MAIN')
   main,
@@ -14072,4 +18406,9954 @@ class PosVisibilityQuery
   @override
   PosVisibility$Query parse(Map<String, dynamic> json) =>
       PosVisibility$Query.fromJson(json);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPosVisibilityByPosAndTargetArguments extends JsonSerializable
+    with EquatableMixin {
+  GetPosVisibilityByPosAndTargetArguments({
+    this.pagination,
+    required this.target,
+    required this.pos,
+  });
+
+  @override
+  factory GetPosVisibilityByPosAndTargetArguments.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPosVisibilityByPosAndTargetArgumentsFromJson(json);
+
+  final PaginationInput? pagination;
+
+  late TargetACIInput target;
+
+  late String pos;
+
+  @override
+  List<Object?> get props => [pagination, target, pos];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPosVisibilityByPosAndTargetArgumentsToJson(this);
+}
+
+final GET_POS_VISIBILITY_BY_POS_AND_TARGET_QUERY_DOCUMENT_OPERATION_NAME =
+    'getPosVisibilityByPosAndTarget';
+final GET_POS_VISIBILITY_BY_POS_AND_TARGET_QUERY_DOCUMENT =
+    DocumentNode(definitions: [
+  OperationDefinitionNode(
+    type: OperationType.query,
+    name: NameNode(value: 'getPosVisibilityByPosAndTarget'),
+    variableDefinitions: [
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'pagination')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'PaginationInput'),
+          isNonNull: false,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'target')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'TargetACIInput'),
+          isNonNull: true,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'pos')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'ID'),
+          isNonNull: true,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+    ],
+    directives: [],
+    selectionSet: SelectionSetNode(selections: [
+      FieldNode(
+        name: NameNode(value: 'getPosVisibilityByPosAndTarget'),
+        alias: null,
+        arguments: [
+          ArgumentNode(
+            name: NameNode(value: 'pagination'),
+            value: VariableNode(name: NameNode(value: 'pagination')),
+          ),
+          ArgumentNode(
+            name: NameNode(value: 'target'),
+            value: VariableNode(name: NameNode(value: 'target')),
+          ),
+          ArgumentNode(
+            name: NameNode(value: 'pos'),
+            value: VariableNode(name: NameNode(value: 'pos')),
+          ),
+        ],
+        directives: [],
+        selectionSet: SelectionSetNode(selections: [
+          FieldNode(
+            name: NameNode(value: 'count'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'isLast'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'objects'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'id'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'section'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'title'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'icon'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'media'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'videos'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'pictures'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'deg360'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'owner'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'tags'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'title'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'email'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'website'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'subtitle'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'currency'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'turnover'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'reference'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'published'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'brandColor'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'isFollowed'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'contactEmails'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'averageCustomers'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'languages'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'picture'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'outsidePictures'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'insidePictures'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'openingHours'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'status'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'hours'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'day'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'from'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'to'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'specialOffers'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'offerType'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'hours'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'day'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'from'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'to'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'locations'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'city'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'address'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'postCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'addressLine'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'location'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'type'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'coordinates'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'country'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'dialCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iconFlag'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'state'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'created'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'surface'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'dialCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'country'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'code'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'dialCode'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'iconFlag'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagSquare'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagWide'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'owner'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'phone'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'number'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'countryCode'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'chatContact'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'fontIcon'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'images'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'style'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'images'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'svg'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'size48'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size96'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size144'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size240'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size480'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'png'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'size48'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size96'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size144'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size240'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size480'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'value'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'socialMedia'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'fontIcon'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'images'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'style'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'images'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'svg'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'size48'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size96'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size144'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size240'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size480'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'png'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'size48'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size96'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size144'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size240'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size480'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'value'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'company'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'media'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'videos'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'deg360'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'pictures'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'address'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'city'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'address'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'postCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'addressLine'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'location'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'type'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'coordinates'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'country'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'code'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'dialCode'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'iconFlag'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagSquare'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagWide'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'state'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'code'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'created'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'surface'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'dialCode'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'country'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'name'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'code'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'dialCode'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'iconFlag'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'createdAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'updatedAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'flagSquare'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'flagWide'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagSquare'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagWide'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'owner'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'phone'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'number'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'countryCode'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'legal'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'vat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'register'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'licence'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'banks'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'holder'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'type'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'address'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'city'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'address'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'postCode'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'addressLine'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'location'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'type'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'coordinates'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'country'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'code'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'dialCode'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'iconFlag'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'createdAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'updatedAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagSquare'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagWide'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'state'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'code'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'created'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'surface'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'dialCode'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'country'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'id'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'name'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'code'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'dialCode'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'iconFlag'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'createdAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'updatedAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagSquare'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagWide'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'createdAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'updatedAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagSquare'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagWide'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'owner'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'phone'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'number'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name:
+                                                NameNode(value: 'countryCode'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'account'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iban'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'bank'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'code'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'bic'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'logo'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'svg'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'png'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'default'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size16'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size24'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size32'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size48'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size64'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size128'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size256'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'size512'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'icon'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'externalId'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'contact'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'website'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'email'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'phone'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'number'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'isValid'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'countryCode'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'validationNumber'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'logistic'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'tags'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'externalId'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'posCategory'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'mapPicture'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'picture'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'services'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'index'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'paymentMethods'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'paymentType'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'materialIcon'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'images'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'png'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt2x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt_128'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt_256'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt_512'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'card_flat'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'card_flat2x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'card_flat_128'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'card_flat_256'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'card_flat_512'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'dark'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'dark2x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'dark_128'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'dark_256'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'dark_512'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flat'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flat2x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flat_128'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flat_256'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flat_512'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'light'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'light2x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'light_128'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'light_256'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'light_512'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'default'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'default2x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'default_128'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'default_256'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'default_512'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'svg'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'card_flat'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'dark'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flat'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'light'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'default'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'loyaltyPrograms'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'to'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'from'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'loyaltyProgram'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'programName'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'picture'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'company'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'description'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'media'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'videos'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'deg360'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'pictures'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'address'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'city'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'address'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'postCode'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'addressLine'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'location'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'type'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'coordinates'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'country'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'code'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'dialCode'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'iconFlag'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'createdAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'updatedAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagSquare'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagWide'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'state'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'code'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'created'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'surface'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'dialCode'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'country'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'id'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'name'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'code'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'dialCode'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'iconFlag'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'createdAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'updatedAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagSquare'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagWide'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'createdAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'updatedAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagSquare'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagWide'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'owner'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'phone'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'number'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name:
+                                                NameNode(value: 'countryCode'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'legal'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'vat'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'register'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'licence'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'banks'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'holder'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'type'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'address'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'city'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'address'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'postCode'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name:
+                                                NameNode(value: 'addressLine'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'location'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name: NameNode(value: 'type'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(
+                                                    value: 'coordinates'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'country'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name: NameNode(value: 'id'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'name'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'code'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'dialCode'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'iconFlag'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(
+                                                    value: 'createdAt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(
+                                                    value: 'updatedAt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(
+                                                    value: 'flagSquare'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: SelectionSetNode(
+                                                    selections: [
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'baseUrl'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'path'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'width'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'height'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'x'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'y'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                    ]),
+                                              ),
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'flagWide'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: SelectionSetNode(
+                                                    selections: [
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'baseUrl'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'path'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'width'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'height'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'x'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'y'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                    ]),
+                                              ),
+                                            ]),
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'state'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name: NameNode(value: 'id'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'name'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'code'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'created'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'surface'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'dialCode'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'country'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: SelectionSetNode(
+                                                    selections: [
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'id'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'name'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'code'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'dialCode'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'iconFlag'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'createdAt'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'updatedAt'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value:
+                                                                'flagSquare'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet:
+                                                            SelectionSetNode(
+                                                                selections: [
+                                                              FieldNode(
+                                                                name: NameNode(
+                                                                    value:
+                                                                        'baseUrl'),
+                                                                alias: null,
+                                                                arguments: [],
+                                                                directives: [],
+                                                                selectionSet:
+                                                                    null,
+                                                              ),
+                                                              FieldNode(
+                                                                name: NameNode(
+                                                                    value:
+                                                                        'path'),
+                                                                alias: null,
+                                                                arguments: [],
+                                                                directives: [],
+                                                                selectionSet:
+                                                                    null,
+                                                              ),
+                                                              FieldNode(
+                                                                name: NameNode(
+                                                                    value:
+                                                                        'width'),
+                                                                alias: null,
+                                                                arguments: [],
+                                                                directives: [],
+                                                                selectionSet:
+                                                                    null,
+                                                              ),
+                                                              FieldNode(
+                                                                name: NameNode(
+                                                                    value:
+                                                                        'height'),
+                                                                alias: null,
+                                                                arguments: [],
+                                                                directives: [],
+                                                                selectionSet:
+                                                                    null,
+                                                              ),
+                                                              FieldNode(
+                                                                name: NameNode(
+                                                                    value: 'x'),
+                                                                alias: null,
+                                                                arguments: [],
+                                                                directives: [],
+                                                                selectionSet:
+                                                                    null,
+                                                              ),
+                                                              FieldNode(
+                                                                name: NameNode(
+                                                                    value: 'y'),
+                                                                alias: null,
+                                                                arguments: [],
+                                                                directives: [],
+                                                                selectionSet:
+                                                                    null,
+                                                              ),
+                                                            ]),
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'flagWide'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet:
+                                                            SelectionSetNode(
+                                                                selections: [
+                                                              FieldNode(
+                                                                name: NameNode(
+                                                                    value:
+                                                                        'baseUrl'),
+                                                                alias: null,
+                                                                arguments: [],
+                                                                directives: [],
+                                                                selectionSet:
+                                                                    null,
+                                                              ),
+                                                              FieldNode(
+                                                                name: NameNode(
+                                                                    value:
+                                                                        'path'),
+                                                                alias: null,
+                                                                arguments: [],
+                                                                directives: [],
+                                                                selectionSet:
+                                                                    null,
+                                                              ),
+                                                              FieldNode(
+                                                                name: NameNode(
+                                                                    value:
+                                                                        'width'),
+                                                                alias: null,
+                                                                arguments: [],
+                                                                directives: [],
+                                                                selectionSet:
+                                                                    null,
+                                                              ),
+                                                              FieldNode(
+                                                                name: NameNode(
+                                                                    value:
+                                                                        'height'),
+                                                                alias: null,
+                                                                arguments: [],
+                                                                directives: [],
+                                                                selectionSet:
+                                                                    null,
+                                                              ),
+                                                              FieldNode(
+                                                                name: NameNode(
+                                                                    value: 'x'),
+                                                                alias: null,
+                                                                arguments: [],
+                                                                directives: [],
+                                                                selectionSet:
+                                                                    null,
+                                                              ),
+                                                              FieldNode(
+                                                                name: NameNode(
+                                                                    value: 'y'),
+                                                                alias: null,
+                                                                arguments: [],
+                                                                directives: [],
+                                                                selectionSet:
+                                                                    null,
+                                                              ),
+                                                            ]),
+                                                      ),
+                                                    ]),
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(
+                                                    value: 'createdAt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(
+                                                    value: 'updatedAt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(
+                                                    value: 'flagSquare'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: SelectionSetNode(
+                                                    selections: [
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'baseUrl'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'path'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'width'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'height'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'x'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'y'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                    ]),
+                                              ),
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'flagWide'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: SelectionSetNode(
+                                                    selections: [
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'baseUrl'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'path'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'width'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'height'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'x'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'y'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                    ]),
+                                              ),
+                                            ]),
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'owner'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name: NameNode(value: 'name'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'phone'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: SelectionSetNode(
+                                                    selections: [
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'number'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value:
+                                                                'countryCode'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                    ]),
+                                              ),
+                                            ]),
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'account'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'iban'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'bank'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'code'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'bic'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'logo'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'svg'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'png'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'default'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: SelectionSetNode(
+                                                    selections: [
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'baseUrl'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'path'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'width'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'height'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'x'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'y'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                    ]),
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'size16'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: SelectionSetNode(
+                                                    selections: [
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'baseUrl'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'path'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'width'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'height'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'x'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'y'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                    ]),
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'size24'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: SelectionSetNode(
+                                                    selections: [
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'baseUrl'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'path'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'width'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'height'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'x'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'y'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                    ]),
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'size32'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: SelectionSetNode(
+                                                    selections: [
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'baseUrl'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'path'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'width'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'height'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'x'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'y'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                    ]),
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'size48'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: SelectionSetNode(
+                                                    selections: [
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'baseUrl'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'path'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'width'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'height'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'x'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'y'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                    ]),
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'size64'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: SelectionSetNode(
+                                                    selections: [
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'baseUrl'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'path'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'width'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'height'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'x'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'y'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                    ]),
+                                              ),
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'size128'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: SelectionSetNode(
+                                                    selections: [
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'baseUrl'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'path'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'width'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'height'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'x'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'y'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                    ]),
+                                              ),
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'size256'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: SelectionSetNode(
+                                                    selections: [
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'baseUrl'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'path'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'width'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'height'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'x'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'y'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                    ]),
+                                              ),
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'size512'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: SelectionSetNode(
+                                                    selections: [
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'baseUrl'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'path'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'width'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'height'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'x'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                      FieldNode(
+                                                        name: NameNode(
+                                                            value: 'y'),
+                                                        alias: null,
+                                                        arguments: [],
+                                                        directives: [],
+                                                        selectionSet: null,
+                                                      ),
+                                                    ]),
+                                              ),
+                                            ]),
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'icon'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'createdAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'updatedAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'externalId'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'createdAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'updatedAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'contact'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'website'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'email'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'phone'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'number'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'isValid'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'countryCode'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name:
+                                            NameNode(value: 'validationNumber'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'logistic'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'tags'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'externalId'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'items'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'classification'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'title'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'icon'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'media'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'videos'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'pictures'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'deg360'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'sections'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'title'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'icon'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'media'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'videos'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'pictures'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'deg360'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'value'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'item'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'title'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'icon'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'media'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'videos'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'pictures'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'deg360'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'classification'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'title'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'description'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'icon'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'media'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'videos'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'pictures'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'deg360'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'sections'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'title'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'description'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'icon'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'media'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'videos'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'pictures'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'deg360'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'createdAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'updatedAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flag'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'createdAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+        ]),
+      )
+    ]),
+  )
+]);
+
+class GetPosVisibilityByPosAndTargetQuery extends GraphQLQuery<
+    GetPosVisibilityByPosAndTarget$Query,
+    GetPosVisibilityByPosAndTargetArguments> {
+  GetPosVisibilityByPosAndTargetQuery({required this.variables});
+
+  @override
+  final DocumentNode document =
+      GET_POS_VISIBILITY_BY_POS_AND_TARGET_QUERY_DOCUMENT;
+
+  @override
+  final String operationName =
+      GET_POS_VISIBILITY_BY_POS_AND_TARGET_QUERY_DOCUMENT_OPERATION_NAME;
+
+  @override
+  final GetPosVisibilityByPosAndTargetArguments variables;
+
+  @override
+  List<Object?> get props => [document, operationName, variables];
+  @override
+  GetPosVisibilityByPosAndTarget$Query parse(Map<String, dynamic> json) =>
+      GetPosVisibilityByPosAndTarget$Query.fromJson(json);
 }
