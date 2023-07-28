@@ -543,6 +543,34 @@ Map<String, dynamic> _$UpdateVisibilitySection$MutationToJson(
       'updateVisibilitySection': instance.updateVisibilitySection.toJson(),
     };
 
+DeleteVisibilitySection$Mutation$DeleteResponseDtoType
+    _$DeleteVisibilitySection$Mutation$DeleteResponseDtoTypeFromJson(
+            Map<String, dynamic> json) =>
+        DeleteVisibilitySection$Mutation$DeleteResponseDtoType()
+          ..message = json['message'] as String
+          ..success = json['success'] as bool;
+
+Map<String, dynamic>
+    _$DeleteVisibilitySection$Mutation$DeleteResponseDtoTypeToJson(
+            DeleteVisibilitySection$Mutation$DeleteResponseDtoType instance) =>
+        <String, dynamic>{
+          'message': instance.message,
+          'success': instance.success,
+        };
+
+DeleteVisibilitySection$Mutation _$DeleteVisibilitySection$MutationFromJson(
+        Map<String, dynamic> json) =>
+    DeleteVisibilitySection$Mutation()
+      ..deleteVisibilitySection =
+          DeleteVisibilitySection$Mutation$DeleteResponseDtoType.fromJson(
+              json['deleteVisibilitySection'] as Map<String, dynamic>);
+
+Map<String, dynamic> _$DeleteVisibilitySection$MutationToJson(
+        DeleteVisibilitySection$Mutation instance) =>
+    <String, dynamic>{
+      'deleteVisibilitySection': instance.deleteVisibilitySection.toJson(),
+    };
+
 GetVisibilitySectionsbyTargetPaginatedArguments
     _$GetVisibilitySectionsbyTargetPaginatedArgumentsFromJson(
             Map<String, dynamic> json) =>
@@ -600,4 +628,16 @@ Map<String, dynamic> _$UpdateVisibilitySectionArgumentsToJson(
     <String, dynamic>{
       'id': instance.id,
       'input': instance.input.toJson(),
+    };
+
+DeleteVisibilitySectionArguments _$DeleteVisibilitySectionArgumentsFromJson(
+        Map<String, dynamic> json) =>
+    DeleteVisibilitySectionArguments(
+      id: json['id'] as String,
+    );
+
+Map<String, dynamic> _$DeleteVisibilitySectionArgumentsToJson(
+        DeleteVisibilitySectionArguments instance) =>
+    <String, dynamic>{
+      'id': instance.id,
     };

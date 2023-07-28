@@ -101,3 +101,10 @@ mutation updateVisibilitySection($id: ID!, $input: VisibilitySectionInput!) {
     updatedAt
   }
 }
+
+mutation deleteVisibilitySection ($id: ID!) {
+  deleteVisibilitySection(id: $id) {
+    message
+    success
+  }
+}
