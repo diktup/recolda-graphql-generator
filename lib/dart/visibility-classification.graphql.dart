@@ -783,6 +783,47 @@ class UpdateVisibilityClassification$Mutation extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class DeleteVisibilityClassification$Mutation$DeleteResponseDtoType
+    extends JsonSerializable with EquatableMixin {
+  DeleteVisibilityClassification$Mutation$DeleteResponseDtoType();
+
+  factory DeleteVisibilityClassification$Mutation$DeleteResponseDtoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$DeleteVisibilityClassification$Mutation$DeleteResponseDtoTypeFromJson(
+          json);
+
+  late String message;
+
+  late bool success;
+
+  @override
+  List<Object?> get props => [message, success];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$DeleteVisibilityClassification$Mutation$DeleteResponseDtoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class DeleteVisibilityClassification$Mutation extends JsonSerializable
+    with EquatableMixin {
+  DeleteVisibilityClassification$Mutation();
+
+  factory DeleteVisibilityClassification$Mutation.fromJson(
+          Map<String, dynamic> json) =>
+      _$DeleteVisibilityClassification$MutationFromJson(json);
+
+  late DeleteVisibilityClassification$Mutation$DeleteResponseDtoType
+      deleteVisibilityClassification;
+
+  @override
+  List<Object?> get props => [deleteVisibilityClassification];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$DeleteVisibilityClassification$MutationToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetVisibilityClassificationsBySectionPaginatedArguments
     extends JsonSerializable with EquatableMixin {
   GetVisibilityClassificationsBySectionPaginatedArguments({
@@ -2064,4 +2105,97 @@ class UpdateVisibilityClassificationMutation extends GraphQLQuery<
   @override
   UpdateVisibilityClassification$Mutation parse(Map<String, dynamic> json) =>
       UpdateVisibilityClassification$Mutation.fromJson(json);
+}
+
+@JsonSerializable(explicitToJson: true)
+class DeleteVisibilityClassificationArguments extends JsonSerializable
+    with EquatableMixin {
+  DeleteVisibilityClassificationArguments({required this.id});
+
+  @override
+  factory DeleteVisibilityClassificationArguments.fromJson(
+          Map<String, dynamic> json) =>
+      _$DeleteVisibilityClassificationArgumentsFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$DeleteVisibilityClassificationArgumentsToJson(this);
+}
+
+final DELETE_VISIBILITY_CLASSIFICATION_MUTATION_DOCUMENT_OPERATION_NAME =
+    'deleteVisibilityClassification';
+final DELETE_VISIBILITY_CLASSIFICATION_MUTATION_DOCUMENT =
+    DocumentNode(definitions: [
+  OperationDefinitionNode(
+    type: OperationType.mutation,
+    name: NameNode(value: 'deleteVisibilityClassification'),
+    variableDefinitions: [
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'id')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'ID'),
+          isNonNull: true,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      )
+    ],
+    directives: [],
+    selectionSet: SelectionSetNode(selections: [
+      FieldNode(
+        name: NameNode(value: 'deleteVisibilityClassification'),
+        alias: null,
+        arguments: [
+          ArgumentNode(
+            name: NameNode(value: 'id'),
+            value: VariableNode(name: NameNode(value: 'id')),
+          )
+        ],
+        directives: [],
+        selectionSet: SelectionSetNode(selections: [
+          FieldNode(
+            name: NameNode(value: 'message'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'success'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+        ]),
+      )
+    ]),
+  )
+]);
+
+class DeleteVisibilityClassificationMutation extends GraphQLQuery<
+    DeleteVisibilityClassification$Mutation,
+    DeleteVisibilityClassificationArguments> {
+  DeleteVisibilityClassificationMutation({required this.variables});
+
+  @override
+  final DocumentNode document =
+      DELETE_VISIBILITY_CLASSIFICATION_MUTATION_DOCUMENT;
+
+  @override
+  final String operationName =
+      DELETE_VISIBILITY_CLASSIFICATION_MUTATION_DOCUMENT_OPERATION_NAME;
+
+  @override
+  final DeleteVisibilityClassificationArguments variables;
+
+  @override
+  List<Object?> get props => [document, operationName, variables];
+  @override
+  DeleteVisibilityClassification$Mutation parse(Map<String, dynamic> json) =>
+      DeleteVisibilityClassification$Mutation.fromJson(json);
 }

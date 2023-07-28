@@ -856,6 +856,38 @@ Map<String, dynamic> _$UpdateVisibilityClassification$MutationToJson(
           instance.updateVisibilityClassification.toJson(),
     };
 
+DeleteVisibilityClassification$Mutation$DeleteResponseDtoType
+    _$DeleteVisibilityClassification$Mutation$DeleteResponseDtoTypeFromJson(
+            Map<String, dynamic> json) =>
+        DeleteVisibilityClassification$Mutation$DeleteResponseDtoType()
+          ..message = json['message'] as String
+          ..success = json['success'] as bool;
+
+Map<String, dynamic>
+    _$DeleteVisibilityClassification$Mutation$DeleteResponseDtoTypeToJson(
+            DeleteVisibilityClassification$Mutation$DeleteResponseDtoType
+                instance) =>
+        <String, dynamic>{
+          'message': instance.message,
+          'success': instance.success,
+        };
+
+DeleteVisibilityClassification$Mutation
+    _$DeleteVisibilityClassification$MutationFromJson(
+            Map<String, dynamic> json) =>
+        DeleteVisibilityClassification$Mutation()
+          ..deleteVisibilityClassification =
+              DeleteVisibilityClassification$Mutation$DeleteResponseDtoType
+                  .fromJson(json['deleteVisibilityClassification']
+                      as Map<String, dynamic>);
+
+Map<String, dynamic> _$DeleteVisibilityClassification$MutationToJson(
+        DeleteVisibilityClassification$Mutation instance) =>
+    <String, dynamic>{
+      'deleteVisibilityClassification':
+          instance.deleteVisibilityClassification.toJson(),
+    };
+
 GetVisibilityClassificationsBySectionPaginatedArguments
     _$GetVisibilityClassificationsBySectionPaginatedArgumentsFromJson(
             Map<String, dynamic> json) =>
@@ -911,5 +943,18 @@ Map<String, dynamic> _$UpdateVisibilityClassificationArgumentsToJson(
         UpdateVisibilityClassificationArguments instance) =>
     <String, dynamic>{
       'input': instance.input.toJson(),
+      'id': instance.id,
+    };
+
+DeleteVisibilityClassificationArguments
+    _$DeleteVisibilityClassificationArgumentsFromJson(
+            Map<String, dynamic> json) =>
+        DeleteVisibilityClassificationArguments(
+          id: json['id'] as String,
+        );
+
+Map<String, dynamic> _$DeleteVisibilityClassificationArgumentsToJson(
+        DeleteVisibilityClassificationArguments instance) =>
+    <String, dynamic>{
       'id': instance.id,
     };

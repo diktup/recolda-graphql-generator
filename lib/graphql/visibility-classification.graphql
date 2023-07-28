@@ -186,3 +186,10 @@ mutation updateVisibilityClassification(
     updatedAt
   }
 }
+
+mutation deleteVisibilityClassification($id: ID!) {
+  deleteVisibilityClassification(id: $id) {
+    message
+    success
+  }
+}
