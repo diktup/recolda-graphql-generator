@@ -12918,6 +12918,42 @@ class UpdatePosVisibility$Mutation extends JsonSerializable
   Map<String, dynamic> toJson() => _$UpdatePosVisibility$MutationToJson(this);
 }
 
+@JsonSerializable(explicitToJson: true)
+class DeletePosVisibility$Mutation$DeleteResponseDtoType
+    extends JsonSerializable with EquatableMixin {
+  DeletePosVisibility$Mutation$DeleteResponseDtoType();
+
+  factory DeletePosVisibility$Mutation$DeleteResponseDtoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$DeletePosVisibility$Mutation$DeleteResponseDtoTypeFromJson(json);
+
+  late String message;
+
+  late bool success;
+
+  @override
+  List<Object?> get props => [message, success];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$DeletePosVisibility$Mutation$DeleteResponseDtoTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class DeletePosVisibility$Mutation extends JsonSerializable
+    with EquatableMixin {
+  DeletePosVisibility$Mutation();
+
+  factory DeletePosVisibility$Mutation.fromJson(Map<String, dynamic> json) =>
+      _$DeletePosVisibility$MutationFromJson(json);
+
+  late DeletePosVisibility$Mutation$DeleteResponseDtoType deletePosVisibility;
+
+  @override
+  List<Object?> get props => [deletePosVisibility];
+  @override
+  Map<String, dynamic> toJson() => _$DeletePosVisibility$MutationToJson(this);
+}
+
 enum VisibilityOwnerEnum {
   @JsonValue('MAIN')
   main,
@@ -42434,4 +42470,92 @@ class UpdatePosVisibilityMutation extends GraphQLQuery<
   @override
   UpdatePosVisibility$Mutation parse(Map<String, dynamic> json) =>
       UpdatePosVisibility$Mutation.fromJson(json);
+}
+
+@JsonSerializable(explicitToJson: true)
+class DeletePosVisibilityArguments extends JsonSerializable
+    with EquatableMixin {
+  DeletePosVisibilityArguments({required this.id});
+
+  @override
+  factory DeletePosVisibilityArguments.fromJson(Map<String, dynamic> json) =>
+      _$DeletePosVisibilityArgumentsFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+  @override
+  Map<String, dynamic> toJson() => _$DeletePosVisibilityArgumentsToJson(this);
+}
+
+final DELETE_POS_VISIBILITY_MUTATION_DOCUMENT_OPERATION_NAME =
+    'deletePosVisibility';
+final DELETE_POS_VISIBILITY_MUTATION_DOCUMENT = DocumentNode(definitions: [
+  OperationDefinitionNode(
+    type: OperationType.mutation,
+    name: NameNode(value: 'deletePosVisibility'),
+    variableDefinitions: [
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'id')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'ID'),
+          isNonNull: true,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      )
+    ],
+    directives: [],
+    selectionSet: SelectionSetNode(selections: [
+      FieldNode(
+        name: NameNode(value: 'deletePosVisibility'),
+        alias: null,
+        arguments: [
+          ArgumentNode(
+            name: NameNode(value: 'id'),
+            value: VariableNode(name: NameNode(value: 'id')),
+          )
+        ],
+        directives: [],
+        selectionSet: SelectionSetNode(selections: [
+          FieldNode(
+            name: NameNode(value: 'message'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'success'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+        ]),
+      )
+    ]),
+  )
+]);
+
+class DeletePosVisibilityMutation extends GraphQLQuery<
+    DeletePosVisibility$Mutation, DeletePosVisibilityArguments> {
+  DeletePosVisibilityMutation({required this.variables});
+
+  @override
+  final DocumentNode document = DELETE_POS_VISIBILITY_MUTATION_DOCUMENT;
+
+  @override
+  final String operationName =
+      DELETE_POS_VISIBILITY_MUTATION_DOCUMENT_OPERATION_NAME;
+
+  @override
+  final DeletePosVisibilityArguments variables;
+
+  @override
+  List<Object?> get props => [document, operationName, variables];
+  @override
+  DeletePosVisibility$Mutation parse(Map<String, dynamic> json) =>
+      DeletePosVisibility$Mutation.fromJson(json);
 }

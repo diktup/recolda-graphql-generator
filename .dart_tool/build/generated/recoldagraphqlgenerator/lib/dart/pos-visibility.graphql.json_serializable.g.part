@@ -14218,6 +14218,33 @@ Map<String, dynamic> _$UpdatePosVisibility$MutationToJson(
       'updatePosVisibility': instance.updatePosVisibility.toJson(),
     };
 
+DeletePosVisibility$Mutation$DeleteResponseDtoType
+    _$DeletePosVisibility$Mutation$DeleteResponseDtoTypeFromJson(
+            Map<String, dynamic> json) =>
+        DeletePosVisibility$Mutation$DeleteResponseDtoType()
+          ..message = json['message'] as String
+          ..success = json['success'] as bool;
+
+Map<String, dynamic> _$DeletePosVisibility$Mutation$DeleteResponseDtoTypeToJson(
+        DeletePosVisibility$Mutation$DeleteResponseDtoType instance) =>
+    <String, dynamic>{
+      'message': instance.message,
+      'success': instance.success,
+    };
+
+DeletePosVisibility$Mutation _$DeletePosVisibility$MutationFromJson(
+        Map<String, dynamic> json) =>
+    DeletePosVisibility$Mutation()
+      ..deletePosVisibility =
+          DeletePosVisibility$Mutation$DeleteResponseDtoType.fromJson(
+              json['deletePosVisibility'] as Map<String, dynamic>);
+
+Map<String, dynamic> _$DeletePosVisibility$MutationToJson(
+        DeletePosVisibility$Mutation instance) =>
+    <String, dynamic>{
+      'deletePosVisibility': instance.deletePosVisibility.toJson(),
+    };
+
 GetPosVisibilityByPosAndTargetArguments
     _$GetPosVisibilityByPosAndTargetArgumentsFromJson(
             Map<String, dynamic> json) =>
@@ -14271,4 +14298,16 @@ Map<String, dynamic> _$UpdatePosVisibilityArgumentsToJson(
     <String, dynamic>{
       'id': instance.id,
       'input': instance.input.toJson(),
+    };
+
+DeletePosVisibilityArguments _$DeletePosVisibilityArgumentsFromJson(
+        Map<String, dynamic> json) =>
+    DeletePosVisibilityArguments(
+      id: json['id'] as String,
+    );
+
+Map<String, dynamic> _$DeletePosVisibilityArgumentsToJson(
+        DeletePosVisibilityArguments instance) =>
+    <String, dynamic>{
+      'id': instance.id,
     };

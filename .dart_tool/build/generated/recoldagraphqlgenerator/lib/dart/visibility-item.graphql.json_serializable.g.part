@@ -1165,6 +1165,34 @@ Map<String, dynamic> _$UpdateVisibilityItem$MutationToJson(
       'updateVisibilityItem': instance.updateVisibilityItem.toJson(),
     };
 
+DeleteVisibilityItem$Mutation$DeleteResponseDtoType
+    _$DeleteVisibilityItem$Mutation$DeleteResponseDtoTypeFromJson(
+            Map<String, dynamic> json) =>
+        DeleteVisibilityItem$Mutation$DeleteResponseDtoType()
+          ..message = json['message'] as String
+          ..success = json['success'] as bool;
+
+Map<String, dynamic>
+    _$DeleteVisibilityItem$Mutation$DeleteResponseDtoTypeToJson(
+            DeleteVisibilityItem$Mutation$DeleteResponseDtoType instance) =>
+        <String, dynamic>{
+          'message': instance.message,
+          'success': instance.success,
+        };
+
+DeleteVisibilityItem$Mutation _$DeleteVisibilityItem$MutationFromJson(
+        Map<String, dynamic> json) =>
+    DeleteVisibilityItem$Mutation()
+      ..deleteVisibilityItem =
+          DeleteVisibilityItem$Mutation$DeleteResponseDtoType.fromJson(
+              json['deleteVisibilityItem'] as Map<String, dynamic>);
+
+Map<String, dynamic> _$DeleteVisibilityItem$MutationToJson(
+        DeleteVisibilityItem$Mutation instance) =>
+    <String, dynamic>{
+      'deleteVisibilityItem': instance.deleteVisibilityItem.toJson(),
+    };
+
 GetVisibilityItemsByClassificationPaginatedArguments
     _$GetVisibilityItemsByClassificationPaginatedArgumentsFromJson(
             Map<String, dynamic> json) =>
@@ -1219,4 +1247,16 @@ Map<String, dynamic> _$UpdateVisibilityItemArgumentsToJson(
     <String, dynamic>{
       'id': instance.id,
       'input': instance.input.toJson(),
+    };
+
+DeleteVisibilityItemArguments _$DeleteVisibilityItemArgumentsFromJson(
+        Map<String, dynamic> json) =>
+    DeleteVisibilityItemArguments(
+      id: json['id'] as String,
+    );
+
+Map<String, dynamic> _$DeleteVisibilityItemArgumentsToJson(
+        DeleteVisibilityItemArguments instance) =>
+    <String, dynamic>{
+      'id': instance.id,
     };

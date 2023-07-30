@@ -1432,61 +1432,61 @@ query getPosVisibilityByPosAndTarget(
         }
       }
       items {
-      classification {
-      id
-      title
-      description
-      icon
-      media {
-        videos
-        pictures {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        deg360 {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      sections {
-        id
-        title
-        description
-        icon
-        media {
-          videos
-          pictures {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
+        classification {
+          id
+          title
+          description
+          icon
+          media {
+            videos
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
           }
-          deg360 {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
+          sections {
+            id
+            title
+            description
+            icon
+            media {
+              videos
+              pictures {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              deg360 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            createdAt
+            updatedAt
           }
+          flag
+          createdAt
+          updatedAt
         }
-        createdAt
-        updatedAt
-      }
-      flag
-      createdAt
-      updatedAt
-    }
         value {
           item {
             id
@@ -1512,61 +1512,61 @@ query getPosVisibilityByPosAndTarget(
                 y
               }
             }
-  classification {
-      id
-      title
-      description
-      icon
-      media {
-        videos
-        pictures {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        deg360 {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      sections {
-        id
-        title
-        description
-        icon
-        media {
-          videos
-          pictures {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          deg360 {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        createdAt
-        updatedAt
-      }
-      flag
-      createdAt
-      updatedAt
-    }
+            classification {
+              id
+              title
+              description
+              icon
+              media {
+                videos
+                pictures {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                deg360 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              sections {
+                id
+                title
+                description
+                icon
+                media {
+                  videos
+                  pictures {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                  deg360 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                  }
+                }
+                createdAt
+                updatedAt
+              }
+              flag
+              createdAt
+              updatedAt
+            }
           }
           flag
         }
@@ -4708,5 +4708,12 @@ mutation updatePosVisibility($id: ID!, $input: PosVisibilityInput!) {
     }
     createdAt
     updatedAt
+  }
+}
+
+mutation deletePosVisibility($id: ID!) {
+  deletePosVisibility(id: $id) {
+    message
+    success
   }
 }
