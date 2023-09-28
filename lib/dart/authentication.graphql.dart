@@ -3345,6 +3345,11 @@ class UserInput extends JsonSerializable with EquatableMixin {
     this.maritalStatus,
     this.gender,
     this.languages,
+    this.education,
+    this.work,
+    this.lived,
+    this.hobbies,
+    this.interests,
     this.isMailValid,
     this.plugged,
     this.dateOfBirth,
@@ -3399,6 +3404,16 @@ class UserInput extends JsonSerializable with EquatableMixin {
   Gender? gender;
 
   List<String>? languages;
+
+  List<UserEducationInput>? education;
+
+  List<UserWorkInput>? work;
+
+  List<String>? lived;
+
+  List<String>? hobbies;
+
+  List<String>? interests;
 
   bool? isMailValid;
 
@@ -3455,6 +3470,11 @@ class UserInput extends JsonSerializable with EquatableMixin {
         maritalStatus,
         gender,
         languages,
+        education,
+        work,
+        lived,
+        hobbies,
+        interests,
         isMailValid,
         plugged,
         dateOfBirth,
@@ -3510,6 +3530,82 @@ class PictureInput extends JsonSerializable with EquatableMixin {
   List<Object?> get props => [width, height, x, y, alt, baseUrl, path];
   @override
   Map<String, dynamic> toJson() => _$PictureInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UserEducationInput extends JsonSerializable with EquatableMixin {
+  UserEducationInput({
+    this.level,
+    this.name,
+    this.description,
+    this.tags,
+    this.from,
+    this.to,
+    this.graduated,
+  });
+
+  factory UserEducationInput.fromJson(Map<String, dynamic> json) =>
+      _$UserEducationInputFromJson(json);
+
+  @JsonKey(unknownEnumValue: AcademicLevel.artemisUnknown)
+  AcademicLevel? level;
+
+  String? name;
+
+  String? description;
+
+  List<String>? tags;
+
+  DateTime? from;
+
+  DateTime? to;
+
+  bool? graduated;
+
+  @override
+  List<Object?> get props =>
+      [level, name, description, tags, from, to, graduated];
+  @override
+  Map<String, dynamic> toJson() => _$UserEducationInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UserWorkInput extends JsonSerializable with EquatableMixin {
+  UserWorkInput({
+    this.company,
+    this.position,
+    this.description,
+    this.city,
+    this.tags,
+    this.from,
+    this.to,
+    this.current,
+  });
+
+  factory UserWorkInput.fromJson(Map<String, dynamic> json) =>
+      _$UserWorkInputFromJson(json);
+
+  String? company;
+
+  String? position;
+
+  String? description;
+
+  String? city;
+
+  List<String>? tags;
+
+  DateTime? from;
+
+  DateTime? to;
+
+  bool? current;
+
+  @override
+  List<Object?> get props =>
+      [company, position, description, city, tags, from, to, current];
+  @override
+  Map<String, dynamic> toJson() => _$UserWorkInputToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -4938,6 +5034,17 @@ enum SocialImageStyleEnum {
   sticker,
   @JsonValue('COLOR_HAND_DROWN')
   colorHandDrown,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
+enum AcademicLevel {
+  @JsonValue('PRIMARY')
+  primary,
+  @JsonValue('HIGH_SCHOOL')
+  highSchool,
+  @JsonValue('UNIVERSITY')
+  university,
   @JsonValue('ARTEMIS_UNKNOWN')
   artemisUnknown,
 }

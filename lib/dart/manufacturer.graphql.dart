@@ -1509,6 +1509,9 @@ class Manufacturer$Query$ManufacturerType extends JsonSerializable
 
   String? name;
 
+  @JsonKey(unknownEnumValue: Currency.artemisUnknown)
+  Currency? currency;
+
   String? description;
 
   String? website;
@@ -1528,6 +1531,7 @@ class Manufacturer$Query$ManufacturerType extends JsonSerializable
         id,
         email,
         name,
+        currency,
         description,
         website,
         createdAt,
@@ -6337,6 +6341,7 @@ class ManufacturerCreateInput extends JsonSerializable with EquatableMixin {
     this.company,
     this.contactEmails,
     this.website,
+    this.currency,
   });
 
   factory ManufacturerCreateInput.fromJson(Map<String, dynamic> json) =>
@@ -6358,6 +6363,9 @@ class ManufacturerCreateInput extends JsonSerializable with EquatableMixin {
 
   String? website;
 
+  @JsonKey(unknownEnumValue: Currency.artemisUnknown)
+  Currency? currency;
+
   @override
   List<Object?> get props => [
         name,
@@ -6367,7 +6375,8 @@ class ManufacturerCreateInput extends JsonSerializable with EquatableMixin {
         email,
         company,
         contactEmails,
-        website
+        website,
+        currency
       ];
   @override
   Map<String, dynamic> toJson() => _$ManufacturerCreateInputToJson(this);
@@ -8077,6 +8086,7 @@ class ManufacturerUpdateInput extends JsonSerializable with EquatableMixin {
     this.company,
     this.contactEmails,
     this.website,
+    this.currency,
     required this.id,
   });
 
@@ -8099,6 +8109,9 @@ class ManufacturerUpdateInput extends JsonSerializable with EquatableMixin {
 
   String? website;
 
+  @JsonKey(unknownEnumValue: Currency.artemisUnknown)
+  Currency? currency;
+
   late String id;
 
   @override
@@ -8111,6 +8124,7 @@ class ManufacturerUpdateInput extends JsonSerializable with EquatableMixin {
         company,
         contactEmails,
         website,
+        currency,
         id
       ];
   @override
@@ -11249,6 +11263,17 @@ class ListenForManufacturerCreated$Subscription extends JsonSerializable
       _$ListenForManufacturerCreated$SubscriptionToJson(this);
 }
 
+enum Currency {
+  @JsonValue('EUR')
+  eur,
+  @JsonValue('USD')
+  usd,
+  @JsonValue('TND')
+  tnd,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
 enum BankDetailsHolderTypeEnum {
   @JsonValue('PRIVATE')
   private,
@@ -11319,6 +11344,13 @@ final MANUFACTURER_QUERY_DOCUMENT = DocumentNode(definitions: [
           ),
           FieldNode(
             name: NameNode(value: 'name'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'currency'),
             alias: null,
             arguments: [],
             directives: [],

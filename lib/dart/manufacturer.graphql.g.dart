@@ -1619,6 +1619,8 @@ Manufacturer$Query$ManufacturerType
           ..id = json['id'] as String
           ..email = json['email'] as String?
           ..name = json['name'] as String?
+          ..currency = $enumDecodeNullable(_$CurrencyEnumMap, json['currency'],
+              unknownValue: Currency.artemisUnknown)
           ..description = json['description'] as String?
           ..website = json['website'] as String?
           ..createdAt = DateTime.parse(json['createdAt'] as String)
@@ -1650,6 +1652,7 @@ Map<String, dynamic> _$Manufacturer$Query$ManufacturerTypeToJson(
 
   writeNotNull('email', instance.email);
   writeNotNull('name', instance.name);
+  writeNotNull('currency', _$CurrencyEnumMap[instance.currency]);
   writeNotNull('description', instance.description);
   writeNotNull('website', instance.website);
   val['createdAt'] = instance.createdAt.toIso8601String();
@@ -1659,6 +1662,13 @@ Map<String, dynamic> _$Manufacturer$Query$ManufacturerTypeToJson(
   writeNotNull('company', instance.company?.toJson());
   return val;
 }
+
+const _$CurrencyEnumMap = {
+  Currency.eur: 'EUR',
+  Currency.usd: 'USD',
+  Currency.tnd: 'TND',
+  Currency.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
 
 Manufacturer$Query _$Manufacturer$QueryFromJson(Map<String, dynamic> json) =>
     Manufacturer$Query()
@@ -6770,6 +6780,8 @@ ManufacturerCreateInput _$ManufacturerCreateInputFromJson(
           ?.map((e) => e as String)
           .toList(),
       website: json['website'] as String?,
+      currency: $enumDecodeNullable(_$CurrencyEnumMap, json['currency'],
+          unknownValue: Currency.artemisUnknown),
     );
 
 Map<String, dynamic> _$ManufacturerCreateInputToJson(
@@ -6790,6 +6802,7 @@ Map<String, dynamic> _$ManufacturerCreateInputToJson(
   writeNotNull('company', instance.company);
   writeNotNull('contactEmails', instance.contactEmails);
   writeNotNull('website', instance.website);
+  writeNotNull('currency', _$CurrencyEnumMap[instance.currency]);
   return val;
 }
 
@@ -8601,6 +8614,8 @@ ManufacturerUpdateInput _$ManufacturerUpdateInputFromJson(
           ?.map((e) => e as String)
           .toList(),
       website: json['website'] as String?,
+      currency: $enumDecodeNullable(_$CurrencyEnumMap, json['currency'],
+          unknownValue: Currency.artemisUnknown),
       id: json['id'] as String,
     );
 
@@ -8622,6 +8637,7 @@ Map<String, dynamic> _$ManufacturerUpdateInputToJson(
   writeNotNull('company', instance.company);
   writeNotNull('contactEmails', instance.contactEmails);
   writeNotNull('website', instance.website);
+  writeNotNull('currency', _$CurrencyEnumMap[instance.currency]);
   val['id'] = instance.id;
   return val;
 }

@@ -14532,6 +14532,19 @@ UserUpdateInput _$UserUpdateInputFromJson(Map<String, dynamic> json) =>
       languages: (json['languages'] as List<dynamic>?)
           ?.map((e) => e as String)
           .toList(),
+      education: (json['education'] as List<dynamic>?)
+          ?.map((e) => UserEducationInput.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      work: (json['work'] as List<dynamic>?)
+          ?.map((e) => UserWorkInput.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      lived:
+          (json['lived'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      hobbies:
+          (json['hobbies'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      interests: (json['interests'] as List<dynamic>?)
+          ?.map((e) => e as String)
+          .toList(),
       isMailValid: json['isMailValid'] as bool?,
       plugged: json['plugged'] as bool?,
       dateOfBirth: json['dateOfBirth'] == null
@@ -14599,6 +14612,12 @@ Map<String, dynamic> _$UserUpdateInputToJson(UserUpdateInput instance) {
   writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
   writeNotNull('gender', _$GenderEnumMap[instance.gender]);
   writeNotNull('languages', instance.languages);
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived);
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   writeNotNull('isMailValid', instance.isMailValid);
   writeNotNull('plugged', instance.plugged);
   writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
@@ -14655,6 +14674,78 @@ Map<String, dynamic> _$PictureInputToJson(PictureInput instance) {
   writeNotNull('alt', instance.alt);
   val['baseUrl'] = instance.baseUrl;
   val['path'] = instance.path;
+  return val;
+}
+
+UserEducationInput _$UserEducationInputFromJson(Map<String, dynamic> json) =>
+    UserEducationInput(
+      level: $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+          unknownValue: AcademicLevel.artemisUnknown),
+      name: json['name'] as String?,
+      description: json['description'] as String?,
+      tags: (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      from:
+          json['from'] == null ? null : DateTime.parse(json['from'] as String),
+      to: json['to'] == null ? null : DateTime.parse(json['to'] as String),
+      graduated: json['graduated'] as bool?,
+    );
+
+Map<String, dynamic> _$UserEducationInputToJson(UserEducationInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+const _$AcademicLevelEnumMap = {
+  AcademicLevel.primary: 'PRIMARY',
+  AcademicLevel.highSchool: 'HIGH_SCHOOL',
+  AcademicLevel.university: 'UNIVERSITY',
+  AcademicLevel.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
+
+UserWorkInput _$UserWorkInputFromJson(Map<String, dynamic> json) =>
+    UserWorkInput(
+      company: json['company'] as String?,
+      position: json['position'] as String?,
+      description: json['description'] as String?,
+      city: json['city'] as String?,
+      tags: (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      from:
+          json['from'] == null ? null : DateTime.parse(json['from'] as String),
+      to: json['to'] == null ? null : DateTime.parse(json['to'] as String),
+      current: json['current'] as bool?,
+    );
+
+Map<String, dynamic> _$UserWorkInputToJson(UserWorkInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
   return val;
 }
 
@@ -15877,6 +15968,19 @@ UserInput _$UserInputFromJson(Map<String, dynamic> json) => UserInput(
       languages: (json['languages'] as List<dynamic>?)
           ?.map((e) => e as String)
           .toList(),
+      education: (json['education'] as List<dynamic>?)
+          ?.map((e) => UserEducationInput.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      work: (json['work'] as List<dynamic>?)
+          ?.map((e) => UserWorkInput.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      lived:
+          (json['lived'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      hobbies:
+          (json['hobbies'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      interests: (json['interests'] as List<dynamic>?)
+          ?.map((e) => e as String)
+          .toList(),
       isMailValid: json['isMailValid'] as bool?,
       plugged: json['plugged'] as bool?,
       dateOfBirth: json['dateOfBirth'] == null
@@ -15941,6 +16045,12 @@ Map<String, dynamic> _$UserInputToJson(UserInput instance) {
   writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
   writeNotNull('gender', _$GenderEnumMap[instance.gender]);
   writeNotNull('languages', instance.languages);
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived);
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   writeNotNull('isMailValid', instance.isMailValid);
   writeNotNull('plugged', instance.plugged);
   writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
@@ -16087,34 +16197,19 @@ Map<String, dynamic> _$EmailTempVariablesCompanyInputToJson(
 EmailTempVariablesDocumentInput _$EmailTempVariablesDocumentInputFromJson(
         Map<String, dynamic> json) =>
     EmailTempVariablesDocumentInput(
-      category: $enumDecodeNullable(
-          _$SequenceCategoryEnumEnumMap, json['category'],
+      category: $enumDecode(_$SequenceCategoryEnumEnumMap, json['category'],
           unknownValue: SequenceCategoryEnum.artemisUnknown),
-      id: json['id'] as String?,
-      name: json['name'] as String?,
-      document: json['document'] == null
-          ? null
-          : InvoicingInput.fromJson(json['document'] as Map<String, dynamic>),
-      receiver: json['receiver'] as String?,
+      id: json['id'] as String,
+      name: json['name'] as String,
     );
 
 Map<String, dynamic> _$EmailTempVariablesDocumentInputToJson(
-    EmailTempVariablesDocumentInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('category', _$SequenceCategoryEnumEnumMap[instance.category]);
-  writeNotNull('id', instance.id);
-  writeNotNull('name', instance.name);
-  writeNotNull('document', instance.document?.toJson());
-  writeNotNull('receiver', instance.receiver);
-  return val;
-}
+        EmailTempVariablesDocumentInput instance) =>
+    <String, dynamic>{
+      'category': _$SequenceCategoryEnumEnumMap[instance.category]!,
+      'id': instance.id,
+      'name': instance.name,
+    };
 
 const _$SequenceCategoryEnumEnumMap = {
   SequenceCategoryEnum.quotation: 'QUOTATION',
@@ -16127,421 +16222,6 @@ const _$SequenceCategoryEnumEnumMap = {
   SequenceCategoryEnum.purchaseOrder: 'PURCHASE_ORDER',
   SequenceCategoryEnum.artemisUnknown: 'ARTEMIS_UNKNOWN',
 };
-
-InvoicingInput _$InvoicingInputFromJson(Map<String, dynamic> json) =>
-    InvoicingInput(
-      number: json['number'] as String?,
-      date:
-          json['date'] == null ? null : DateTime.parse(json['date'] as String),
-      note: json['note'] as String?,
-      details: (json['details'] as List<dynamic>?)
-          ?.map((e) => KeyValueInput.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      products: (json['products'] as List<dynamic>)
-          .map((e) =>
-              InvoicingProductsBundleInput.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      status: $enumDecodeNullable(
-          _$GenericInvoicingStatusEnumEnumMap, json['status'],
-          unknownValue: GenericInvoicingStatusEnum.artemisUnknown),
-      address: json['address'] == null
-          ? null
-          : InvoicingAddressInput.fromJson(
-              json['address'] as Map<String, dynamic>),
-      taxes: (json['taxes'] as List<dynamic>?)
-          ?.map((e) => TaxRankInput.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      installments: (json['installments'] as List<dynamic>?)
-          ?.map((e) => InstallmentInput.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      discount: json['discount'] == null
-          ? null
-          : DiscountDtoInput.fromJson(json['discount'] as Map<String, dynamic>),
-      logistic: json['logistic'] as String?,
-      project: json['project'] as String?,
-      target: TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
-      company: json['company'] as String,
-      totalPrice: json['totalPrice'] == null
-          ? null
-          : TotalPriceInput.fromJson(
-              json['totalPrice'] as Map<String, dynamic>),
-      toPay: json['toPay'] as String?,
-      totalTax: json['totalTax'] as String?,
-      totalReductions: json['totalReductions'] as String?,
-      bank: json['bank'] as String?,
-    );
-
-Map<String, dynamic> _$InvoicingInputToJson(InvoicingInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('date', instance.date?.toIso8601String());
-  writeNotNull('note', instance.note);
-  writeNotNull('details', instance.details?.map((e) => e.toJson()).toList());
-  val['products'] = instance.products.map((e) => e.toJson()).toList();
-  writeNotNull('status', _$GenericInvoicingStatusEnumEnumMap[instance.status]);
-  writeNotNull('address', instance.address?.toJson());
-  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'installments', instance.installments?.map((e) => e.toJson()).toList());
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull('logistic', instance.logistic);
-  writeNotNull('project', instance.project);
-  val['target'] = instance.target.toJson();
-  val['company'] = instance.company;
-  writeNotNull('totalPrice', instance.totalPrice?.toJson());
-  writeNotNull('toPay', instance.toPay);
-  writeNotNull('totalTax', instance.totalTax);
-  writeNotNull('totalReductions', instance.totalReductions);
-  writeNotNull('bank', instance.bank);
-  return val;
-}
-
-const _$GenericInvoicingStatusEnumEnumMap = {
-  GenericInvoicingStatusEnum.draft: 'DRAFT',
-  GenericInvoicingStatusEnum.open: 'OPEN',
-  GenericInvoicingStatusEnum.issued: 'ISSUED',
-  GenericInvoicingStatusEnum.negociation: 'NEGOCIATION',
-  GenericInvoicingStatusEnum.confirmed: 'CONFIRMED',
-  GenericInvoicingStatusEnum.delivered: 'DELIVERED',
-  GenericInvoicingStatusEnum.canceled: 'CANCELED',
-  GenericInvoicingStatusEnum.artemisUnknown: 'ARTEMIS_UNKNOWN',
-};
-
-KeyValueInput _$KeyValueInputFromJson(Map<String, dynamic> json) =>
-    KeyValueInput(
-      key: json['key'] as String?,
-      value: json['value'] as String?,
-    );
-
-Map<String, dynamic> _$KeyValueInputToJson(KeyValueInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('key', instance.key);
-  writeNotNull('value', instance.value);
-  return val;
-}
-
-InvoicingProductsBundleInput _$InvoicingProductsBundleInputFromJson(
-        Map<String, dynamic> json) =>
-    InvoicingProductsBundleInput(
-      product: json['product'] == null
-          ? null
-          : InvoicingProductsInput.fromJson(
-              json['product'] as Map<String, dynamic>),
-      text: json['text'] as String?,
-      value: json['value'] as String?,
-      rank: json['rank'] as int,
-      kind: $enumDecode(_$ProductKindEnumEnumMap, json['kind'],
-          unknownValue: ProductKindEnum.artemisUnknown),
-    );
-
-Map<String, dynamic> _$InvoicingProductsBundleInputToJson(
-    InvoicingProductsBundleInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('product', instance.product?.toJson());
-  writeNotNull('text', instance.text);
-  writeNotNull('value', instance.value);
-  val['rank'] = instance.rank;
-  val['kind'] = _$ProductKindEnumEnumMap[instance.kind]!;
-  return val;
-}
-
-const _$ProductKindEnumEnumMap = {
-  ProductKindEnum.product: 'PRODUCT',
-  ProductKindEnum.text: 'TEXT',
-  ProductKindEnum.section: 'SECTION',
-  ProductKindEnum.separator: 'SEPARATOR',
-  ProductKindEnum.subtotal: 'SUBTOTAL',
-  ProductKindEnum.artemisUnknown: 'ARTEMIS_UNKNOWN',
-};
-
-InvoicingProductsInput _$InvoicingProductsInputFromJson(
-        Map<String, dynamic> json) =>
-    InvoicingProductsInput(
-      article: json['article'] as String,
-      label: json['label'] as String,
-      description: json['description'] as String?,
-      price: json['price'] as String,
-      total: json['total'] as String,
-      taxes: (json['taxes'] as List<dynamic>)
-          .map((e) => ProductTaxesInput.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      quantity: json['quantity'] as int,
-      discount: json['discount'] == null
-          ? null
-          : DiscountDtoInput.fromJson(json['discount'] as Map<String, dynamic>),
-      rent: json['rent'] == null
-          ? null
-          : RentalRefInput.fromJson(json['rent'] as Map<String, dynamic>),
-    );
-
-Map<String, dynamic> _$InvoicingProductsInputToJson(
-    InvoicingProductsInput instance) {
-  final val = <String, dynamic>{
-    'article': instance.article,
-    'label': instance.label,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('description', instance.description);
-  val['price'] = instance.price;
-  val['total'] = instance.total;
-  val['taxes'] = instance.taxes.map((e) => e.toJson()).toList();
-  val['quantity'] = instance.quantity;
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull('rent', instance.rent?.toJson());
-  return val;
-}
-
-ProductTaxesInput _$ProductTaxesInputFromJson(Map<String, dynamic> json) =>
-    ProductTaxesInput(
-      tax: json['tax'] as String,
-      rank: json['rank'] as int,
-    );
-
-Map<String, dynamic> _$ProductTaxesInputToJson(ProductTaxesInput instance) =>
-    <String, dynamic>{
-      'tax': instance.tax,
-      'rank': instance.rank,
-    };
-
-DiscountDtoInput _$DiscountDtoInputFromJson(Map<String, dynamic> json) =>
-    DiscountDtoInput(
-      discountType: $enumDecode(_$DiscountTypeEnumMap, json['discountType'],
-          unknownValue: DiscountType.artemisUnknown),
-      amount: json['amount'] as String?,
-    );
-
-Map<String, dynamic> _$DiscountDtoInputToJson(DiscountDtoInput instance) {
-  final val = <String, dynamic>{
-    'discountType': _$DiscountTypeEnumMap[instance.discountType]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  return val;
-}
-
-const _$DiscountTypeEnumMap = {
-  DiscountType.amount: 'AMOUNT',
-  DiscountType.percentage: 'PERCENTAGE',
-  DiscountType.artemisUnknown: 'ARTEMIS_UNKNOWN',
-};
-
-RentalRefInput _$RentalRefInputFromJson(Map<String, dynamic> json) =>
-    RentalRefInput(
-      location: json['location'] as String?,
-      description: json['description'] as String?,
-      status: $enumDecodeNullable(_$RentalStatusEnumEnumMap, json['status'],
-          unknownValue: RentalStatusEnum.artemisUnknown),
-      start: json['start'] == null
-          ? null
-          : DateTime.parse(json['start'] as String),
-      end: json['end'] == null ? null : DateTime.parse(json['end'] as String),
-      note: json['note'] == null
-          ? null
-          : RentalNoteInput.fromJson(json['note'] as Map<String, dynamic>),
-    );
-
-Map<String, dynamic> _$RentalRefInputToJson(RentalRefInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('location', instance.location);
-  writeNotNull('description', instance.description);
-  writeNotNull('status', _$RentalStatusEnumEnumMap[instance.status]);
-  writeNotNull('start', instance.start?.toIso8601String());
-  writeNotNull('end', instance.end?.toIso8601String());
-  writeNotNull('note', instance.note?.toJson());
-  return val;
-}
-
-const _$RentalStatusEnumEnumMap = {
-  RentalStatusEnum.returned: 'RETURNED',
-  RentalStatusEnum.delivered: 'DELIVERED',
-  RentalStatusEnum.returning: 'RETURNING',
-  RentalStatusEnum.delivering: 'DELIVERING',
-  RentalStatusEnum.readyForPickup: 'READY_FOR_PICKUP',
-  RentalStatusEnum.artemisUnknown: 'ARTEMIS_UNKNOWN',
-};
-
-RentalNoteInput _$RentalNoteInputFromJson(Map<String, dynamic> json) =>
-    RentalNoteInput(
-      kw$return: json['return'] as String?,
-      delivery: json['delivery'] as String?,
-    );
-
-Map<String, dynamic> _$RentalNoteInputToJson(RentalNoteInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('return', instance.kw$return);
-  writeNotNull('delivery', instance.delivery);
-  return val;
-}
-
-InvoicingAddressInput _$InvoicingAddressInputFromJson(
-        Map<String, dynamic> json) =>
-    InvoicingAddressInput(
-      billing: json['billing'] == null
-          ? null
-          : FullAddressInput.fromJson(json['billing'] as Map<String, dynamic>),
-      shipping: json['shipping'] == null
-          ? null
-          : FullAddressInput.fromJson(json['shipping'] as Map<String, dynamic>),
-    );
-
-Map<String, dynamic> _$InvoicingAddressInputToJson(
-    InvoicingAddressInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('billing', instance.billing?.toJson());
-  writeNotNull('shipping', instance.shipping?.toJson());
-  return val;
-}
-
-TaxRankInput _$TaxRankInputFromJson(Map<String, dynamic> json) => TaxRankInput(
-      tax: json['tax'] as String,
-      rank: json['rank'] as int,
-    );
-
-Map<String, dynamic> _$TaxRankInputToJson(TaxRankInput instance) =>
-    <String, dynamic>{
-      'tax': instance.tax,
-      'rank': instance.rank,
-    };
-
-InstallmentInput _$InstallmentInputFromJson(Map<String, dynamic> json) =>
-    InstallmentInput(
-      amount: json['amount'] as String,
-      paymentMethod: json['paymentMethod'] as String,
-      paymentStatus: $enumDecode(
-          _$PaymentStatusEnumEnumMap, json['paymentStatus'],
-          unknownValue: PaymentStatusEnum.artemisUnknown),
-      paidAt: json['paidAt'] == null
-          ? null
-          : DateTime.parse(json['paidAt'] as String),
-      deadline: json['deadline'] == null
-          ? null
-          : DateTime.parse(json['deadline'] as String),
-    );
-
-Map<String, dynamic> _$InstallmentInputToJson(InstallmentInput instance) {
-  final val = <String, dynamic>{
-    'amount': instance.amount,
-    'paymentMethod': instance.paymentMethod,
-    'paymentStatus': _$PaymentStatusEnumEnumMap[instance.paymentStatus]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('paidAt', instance.paidAt?.toIso8601String());
-  writeNotNull('deadline', instance.deadline?.toIso8601String());
-  return val;
-}
-
-const _$PaymentStatusEnumEnumMap = {
-  PaymentStatusEnum.open: 'OPEN',
-  PaymentStatusEnum.paid: 'PAID',
-  PaymentStatusEnum.canceled: 'CANCELED',
-  PaymentStatusEnum.refunded: 'REFUNDED',
-  PaymentStatusEnum.refundRequested: 'REFUND_REQUESTED',
-  PaymentStatusEnum.artemisUnknown: 'ARTEMIS_UNKNOWN',
-};
-
-TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
-    TargetACIInput(
-      pos: json['pos'] as String?,
-      wholesaler: json['wholesaler'] as String?,
-      manufacturer: json['manufacturer'] as String?,
-      user: json['user'] as String?,
-    );
-
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos);
-  writeNotNull('wholesaler', instance.wholesaler);
-  writeNotNull('manufacturer', instance.manufacturer);
-  writeNotNull('user', instance.user);
-  return val;
-}
-
-TotalPriceInput _$TotalPriceInputFromJson(Map<String, dynamic> json) =>
-    TotalPriceInput(
-      net: json['net'] as String?,
-      gross: json['gross'] as String?,
-    );
-
-Map<String, dynamic> _$TotalPriceInputToJson(TotalPriceInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('net', instance.net);
-  writeNotNull('gross', instance.gross);
-  return val;
-}
 
 UpdateUserPasswordForApp$Mutation$UserType$PhoneType
     _$UpdateUserPasswordForApp$Mutation$UserType$PhoneTypeFromJson(

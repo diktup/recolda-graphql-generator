@@ -3642,6 +3642,19 @@ UserInput _$UserInputFromJson(Map<String, dynamic> json) => UserInput(
       languages: (json['languages'] as List<dynamic>?)
           ?.map((e) => e as String)
           .toList(),
+      education: (json['education'] as List<dynamic>?)
+          ?.map((e) => UserEducationInput.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      work: (json['work'] as List<dynamic>?)
+          ?.map((e) => UserWorkInput.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      lived:
+          (json['lived'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      hobbies:
+          (json['hobbies'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      interests: (json['interests'] as List<dynamic>?)
+          ?.map((e) => e as String)
+          .toList(),
       isMailValid: json['isMailValid'] as bool?,
       plugged: json['plugged'] as bool?,
       dateOfBirth: json['dateOfBirth'] == null
@@ -3706,6 +3719,12 @@ Map<String, dynamic> _$UserInputToJson(UserInput instance) {
   writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
   writeNotNull('gender', _$GenderEnumMap[instance.gender]);
   writeNotNull('languages', instance.languages);
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived);
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   writeNotNull('isMailValid', instance.isMailValid);
   writeNotNull('plugged', instance.plugged);
   writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
@@ -3757,6 +3776,78 @@ Map<String, dynamic> _$PictureInputToJson(PictureInput instance) {
   writeNotNull('alt', instance.alt);
   val['baseUrl'] = instance.baseUrl;
   val['path'] = instance.path;
+  return val;
+}
+
+UserEducationInput _$UserEducationInputFromJson(Map<String, dynamic> json) =>
+    UserEducationInput(
+      level: $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+          unknownValue: AcademicLevel.artemisUnknown),
+      name: json['name'] as String?,
+      description: json['description'] as String?,
+      tags: (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      from:
+          json['from'] == null ? null : DateTime.parse(json['from'] as String),
+      to: json['to'] == null ? null : DateTime.parse(json['to'] as String),
+      graduated: json['graduated'] as bool?,
+    );
+
+Map<String, dynamic> _$UserEducationInputToJson(UserEducationInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+const _$AcademicLevelEnumMap = {
+  AcademicLevel.primary: 'PRIMARY',
+  AcademicLevel.highSchool: 'HIGH_SCHOOL',
+  AcademicLevel.university: 'UNIVERSITY',
+  AcademicLevel.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
+
+UserWorkInput _$UserWorkInputFromJson(Map<String, dynamic> json) =>
+    UserWorkInput(
+      company: json['company'] as String?,
+      position: json['position'] as String?,
+      description: json['description'] as String?,
+      city: json['city'] as String?,
+      tags: (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      from:
+          json['from'] == null ? null : DateTime.parse(json['from'] as String),
+      to: json['to'] == null ? null : DateTime.parse(json['to'] as String),
+      current: json['current'] as bool?,
+    );
+
+Map<String, dynamic> _$UserWorkInputToJson(UserWorkInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
   return val;
 }
 
