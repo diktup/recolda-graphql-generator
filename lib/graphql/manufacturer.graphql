@@ -3,6 +3,7 @@ query manufacturer($id: String!) {
     id
     email
     name
+    currency
     description
     website
     createdAt

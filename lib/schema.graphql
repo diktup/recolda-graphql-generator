@@ -11553,6 +11553,7 @@ input ManufacturerCreateInput {
   picture: PictureInput
   externalId: String
   address: FullAddressInput
+  currency: Currency
   email: String
   company: String
   contactEmails: [String!]
@@ -11565,6 +11566,7 @@ input ManufacturerUpdateInput {
   externalId: String
   address: FullAddressInput
   email: String
+  currency: Currency
   company: String
   contactEmails: [String!]
   website: String
