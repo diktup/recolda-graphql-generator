@@ -50,3 +50,69 @@ targets:
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/merch-data.graphql
               output: lib/dart/merch-data.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/account.graphql
+              output: lib/dart/account.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/authentication.graphql
+              output: lib/dart/authentication.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/company.graphql
+              output: lib/dart/company.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/point-of-sale.graphql
+              output: lib/dart/point-of-sale.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/user.graphql
+              output: lib/dart/user.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/country.graphql
+              output: lib/dart/country.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/catalogue-category.graphql
+              output: lib/dart/catalogue-category.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/internal-product.graphql
+              output: lib/dart/internal-product.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/payment.graphql
+              output: lib/dart/payment.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/bank.graphql
+              output: lib/dart/bank.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/bank-details.graphql
+              output: lib/dart/bank-details.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/barcode.graphql
+              output: lib/dart/barcode.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/manufacturer.graphql
+              output: lib/dart/manufacturer.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/pos-category.graphql
+              output: lib/dart/pos-category.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/state.graphql
+              output: lib/dart/state.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/attribute-values.graphql
+              output: lib/dart/attribute-values.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/attribute.graphql
+              output: lib/dart/attribute.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/wallet.graphql
+              output: lib/dart/wallet.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/onsite-converter.graphql
+              output: lib/dart/onsite-converter.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/modules-definition.graphql
+              output: lib/dart/modules-definition.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/modules-assignment.graphql
+              output: lib/dart/modules-assignment.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/product.graphql
+              output: lib/dart/product.graphql.dart
