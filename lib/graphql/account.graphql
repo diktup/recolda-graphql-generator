@@ -14067,6 +14067,7 @@ query currentAccount {
       manufacturer {
         id
         email
+        currency
         name
         description
         website
